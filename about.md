@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+This blog is not endorsed by the Reswitched team, and is not an official
+communication channel. Instead, it aims to be a digest of all that happened this
+week, to make it easier for the community to follow what's going on.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Feel free to contact me at [reswitchedweekly@roblab.la](mailto:reswitchedweekly@roblab.la).
