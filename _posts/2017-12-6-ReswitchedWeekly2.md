@@ -15,17 +15,19 @@ Not much was actually finished this week. But a lot of stuff was worked on.
 
 ## What people are working on
 
-- [roblabla](http://github.com/roblabla) enhanced File Descriptor table to
+- [roblabla](https://github.com/roblabla) enhanced File Descriptor table to
   be atomic and thread-safe [newlib#2](https://github.com/reswitched/newlib/pull/2).
-- [roblabla](http://github.com/roblabla) is porting OpenBSD's `pthread` library
+- [roblabla](https://github.com/roblabla) is porting OpenBSD's `pthread` library
   for the switch. This will give a common, standard API for creating threads,
   mutexes, semaphores, and spinlocks. Lots of wizardry abound.
   [libtransistor#48](https://github.com/reswitched/libtransistor/pull/48)
-- [dvdfreitag](http://github.com/dvdfreitag) is working on building LLVM's libc++
+- [dvdfreitag](https://github.com/dvdfreitag) is working on building LLVM's libc++
   for C++ support in libtransistor.
-- [roblabla](http://github.com/roblabla) added multithreading support to
+- [roblabla](https://github.com/roblabla) added multithreading support to
   Mephisto, and fixed a couple papercuts.
   [mephisto#15](https://github.com/reswitched/Mephisto/pull/15)
+- [kgsws](https://github.com/kgsws) is working on Switch Doom, implementing
+  client-server multiplayer.
 - Work is still ongoing for GPU/Audio support.
 
 ## What happened outside Reswitched
