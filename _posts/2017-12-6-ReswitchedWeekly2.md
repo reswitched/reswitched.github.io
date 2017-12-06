@@ -15,23 +15,27 @@ Not much was actually finished this week. But a lot of stuff was worked on.
 
 ## What people are working on
 
-- roblabla enhanced his File Descriptor table to be atomic and thread-safe
-  [newlib#2](https://github.com/reswitched/newlib/pull/2).
-- roblabla is working on porting OpenBSD's `pthread` library for the switch.
-  This will give a common, standard API for creating threads, mutexes,
-  semaphores, and spinlocks. Lots of wizardry abound.
-- dvdfreitag is working on building libstdcxx, for C++ support in libtransistor.
-- roblabla added multithreading support to Mephisto, and fixed a couple
-  papercuts.
+- [roblabla](http://github.com/roblabla) enhanced File Descriptor table to
+  be atomic and thread-safe [newlib#2](https://github.com/reswitched/newlib/pull/2).
+- [roblabla](http://github.com/roblabla) is porting OpenBSD's `pthread` library
+  for the switch. This will give a common, standard API for creating threads,
+  mutexes, semaphores, and spinlocks. Lots of wizardry abound.
+  [libtransistor#48](https://github.com/reswitched/libtransistor/pull/48)
+- [dvdfreitag](http://github.com/dvdfreitag) is working on building LLVM's libc++
+  for C++ support in libtransistor.
+- [roblabla](http://github.com/roblabla) added multithreading support to
+  Mephisto, and fixed a couple papercuts.
+  [mephisto#15](https://github.com/reswitched/Mephisto/pull/15)
+- Work is still ongoing for GPU/Audio support.
 
-## Wider community
+## What happened outside Reswitched
 
-Yellows8 and plutoo released two things:
+Two important releases were done by Yellows8 and plutoo:
 
-- `nxdbg`, a debugger for the Nintendo Switch kernel. It requires a privat
-  kernelhax, but still cool !
+- [`nxdbg`](https://github.com/switchbrew/nxdbg), a debugger for the Nintendo
+  Switch. It requires a private kernelhax to be used.
 - A way to get webkit access with the Switch firmware 1.0.0, through the JPN
-  version of Puyo Puyo Tetris.
+  version of Puyo Puyo Tetris. [See here](http://switchbrew.org/index.php?title=Internet_Browser#WebApplet_launch_with_Tetris).
 
 ## Call for participation
 
