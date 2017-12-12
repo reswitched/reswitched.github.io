@@ -16,27 +16,27 @@ launchers use aceloader as the service to start apps.
 
 ## What was done
 
-- [kgsws](https://github.com/kgsws) and [misson20000](https://github.com/misson20000)
+- @kgsws and @misson20000
   got stdio support into `libtransistor`, routing through a TCP stream.
 - It is now possible to pass arguments when loading NROs.
-- [dvdfreitag](https://github.com/dvdfreitag) has integrated `libssp` into
+- @dvdfreitag has integrated `libssp` into
   `libtransistor`, giving us working stack guards. Our programs are safe from
   stack smashing now !
-- [misson20000](https://github.com/misson20000) has integrated `compiler-rt`
+- @misson20000 has integrated `compiler-rt`
   into `libtransistor`, fixing various hurdles related to missing symbols.
 - A rather big cleanup of the Makefiles were done.
 
 ## What people are working on
 
-- [kgsws](https://github.com/kgsws) is working on getting Doom running. He got
+- @kgsws is working on getting Doom running. He got
   it to run, sending rendered GPU frames to a PC ! He got input working too,
   through libtransistor's HID support !
 - Graphics and audio support are being worked on by various members of the
-  community, including [misson20000](https://github.com/misson20000). According
+  community, including @misson20000. According
   to last update, "`am` (Applet Manager), responsible for taking a framebuffer
   and drawing global widgets to it, uses `pdm:ntfy`, which is part of `sdb`,
   which our ACE kills."
-- [roblabla](https://github.com/roblabla) is working on getting a File Descriptor
+- @roblabla is working on getting a File Descriptor
   table into `newlib`, to properly implement FD-related syscalls (such as `read`
   and `write`).
 
