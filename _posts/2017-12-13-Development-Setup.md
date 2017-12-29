@@ -1,6 +1,6 @@
 ---
 layout: post
-category
+category: tutorial
 title: Development Environment Setup
 ---
 
