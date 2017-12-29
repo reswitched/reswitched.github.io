@@ -18,7 +18,7 @@ season. But on the 28th, the 34C3 happened, and we got **lots of good stuff**
 - @misson20000 also released a SNES emulator, based on
   [RetroArch](https://github.com/reswitched/RetroArch)
   and [snes9x2010](https://github.com/reswitched/libtransistor-snes9x2010).
-- @Pokemod and @roblabla wrote a tutorial to setup a working Switch Homebrew
+- @Pokemod97 and @roblabla wrote a tutorial to setup a working Switch Homebrew
   development environment,
   [check it out](https://reswitchedweekly.github.io/Development-Setup/).
 
