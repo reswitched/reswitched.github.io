@@ -70,30 +70,30 @@ along with llvm5/clang5, python2 and cmake.
   OS version on the [LLVM website](https://apt.llvm.org/). For instance for
   Ubuntu Xenial (16.04), you'd add the following to your sources.list file :
 
-```
-deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial main
-deb-src http://apt.llvm.org/xenial/ llvm-toolchain-xenial main
-# 4.0
-deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-4.0 main
-deb-src http://apt.llvm.org/xenial/ llvm-toolchain-xenial-4.0 main
-# 5.0
-deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-5.0 main
-deb-src http://apt.llvm.org/xenial/ llvm-toolchain-xenial-5.0 main
-```
+  ```
+  deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial main
+  deb-src http://apt.llvm.org/xenial/ llvm-toolchain-xenial main
+  # 4.0
+  deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-4.0 main
+  deb-src http://apt.llvm.org/xenial/ llvm-toolchain-xenial-4.0 main
+  # 5.0
+  deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-5.0 main
+  deb-src http://apt.llvm.org/xenial/ llvm-toolchain-xenial-5.0 main
+  ```
 
   You should also add the LLVM signature key :
 
-```
-wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
-# Fingerprint: 6084 F3CF 814B 57C1 CF12 EFD5 15CF 4D18 AF4F 7421
-```
+  ```
+  wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
+  # Fingerprint: 6084 F3CF 814B 57C1 CF12 EFD5 15CF 4D18 AF4F 7421
+  ```
 
   And finally, install all the softwares :
 
-```
-sudo apt-get update
-sudo apt-get install build-essential python python-pip cmake clang-5.0 lld-5.0
-```
+  ```
+  sudo apt-get update
+  sudo apt-get install build-essential python python-pip cmake clang-5.0 lld-5.0
+  ```
 
 ### Building libtransistor itself
 
@@ -197,12 +197,18 @@ Once you have the branch checked out, you can run make.
 
 Troubleshooting:
 - I'm getting an error about `implicit declaration of function 'closedir'` or `<dirent.h> 
-not supported` or `unknown type name 'DIR'`? See the section below about updating submodules.
-- I'm getting an error about `libtransistor/sdl2/configure: not found` or `libtransistor/build
-/sdl2/Makefile' failed`? The SDL2 submodule hasn't been updated properly. See the section 
-below about updating submodules.
+  not supported` or `unknown type name 'DIR'`?
 
-Updating Submodules
+  See the section below about updating submodules.
+
+- I'm getting an error about `libtransistor/sdl2/configure: not found` or `libtransistor/build
+/sdl2/Makefile' failed`?
+
+  The SDL2 submodule hasn't been updated properly. See the section below about
+  updating submodules.
+
+### Updating Submodules
+
 The graphics-experimental-fs branch of libtransistor uses a different revision of the newlib 
 submodule, which includes a working dirent.h header. Run `git submodule update`. If that 
 doesnt work, try `git submodule update --init --recursive`. If that still hasn't properly 
