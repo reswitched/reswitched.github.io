@@ -1,17 +1,25 @@
 
 div.highlight {
-  /*background-color: #efefef;*/
+  background-color: $darkBackground;
+  -moz-box-shadow: 0px 0px 3px 0px inset rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 3px 0px inset rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 3px 0px inset rgba(0,0,0,0.15);
+
   padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
-  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
   margin: 20px 0 20px 0;
   overflow: auto;
 }
 
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+}
+
+code.highlighter-rouge {
+  background-color: $darkBackground;
+  -moz-box-shadow: 0px 0px 1px 0px inset rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 1px 0px inset rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 1px 0px inset rgba(0,0,0,0.15);
+  padding: 2px;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
