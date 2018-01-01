@@ -195,10 +195,10 @@ This is NOT a bug.
 
 As of 2017/12/29, there is no graphics implemented into libtransistor. In order to 
 compile RetroArch, you will first need to get the 
-[graphics-experimental-fs](https://github.com/reswitched/libtransistor/tree/graphics-experimental-fs) branch of libtransistor and compile it. If you already have libtransistor checked out, you can simply `git checkout 
-origin/graphics-experimental-fs`. Or if you would rather checkout just the specific 
+[fs](https://github.com/reswitched/libtransistor/tree/fs) branch of libtransistor and compile it. If you already have libtransistor checked out, you can simply `git checkout 
+origin/fs`. Or if you would rather checkout just the specific 
 branch, you can use `git clone 
---recursive -b graphics-experimental-fs https://github.com/reswitched/libtransistor.git`. 
+--recursive -b fs https://github.com/reswitched/libtransistor.git`. 
 Once you have the branch checked out, you can run make.
 
 Troubleshooting:
@@ -215,14 +215,14 @@ Troubleshooting:
 
 ### Updating Submodules
 
-The graphics-experimental-fs branch of libtransistor uses a different revision of the newlib 
+The fs branch of libtransistor uses a different revision of the newlib 
 submodule, which includes a working dirent.h header. Run `git submodule update`. If that 
 doesnt work, try `git submodule update --init --recursive`. If that still hasn't properly 
 updated the submodules then you may need to try just checking out the specific branch into 
-a new directory: `git clone --recursive -b graphics-experimental-fs 
+a new directory: `git clone --recursive -b fs 
 https://github.com/reswitched/libtransistor.git`.
 
-Once you have built the graphics-experimental-fs branch of libtransistor, you can now move 
+Once you have built the fs branch of libtransistor, you can now move 
 on to Snes9x. Checkout [libtransistor-snes9x2010](https://github.com/reswitched/libtransistor-snes9x2010)
 and make it as follows:
 
@@ -233,7 +233,7 @@ make platform=switch LIBTRANSISTOR_HOME=/path/to/libtransistor/graphics/branch
 ```
 Depending on whether you already set an environment variable for LIBTRANSISTOR_HOME, you 
 may need to put the path in to the make command as well. Ensure that the path is to the 
-graphics-experimental-fs branch that you have just built.
+fs branch that you have just built.
 
 When it has successfully finished building, you will have a file called `snes9x2010_libretro_switch.a`
 in your libtransistor-snes9x2010 folder.
