@@ -24,6 +24,12 @@ Switch. For this, we use PegaSwitch, an exploit framework. To install PegaSwitch
 you need a modern version of Node.JS. You can follow the tutorial on the
 [Node.JS website](https://nodejs.org/en/download/package-manager/).
 
+You will also need to install the base development tools package for your OS,
+as they are necessary to build some of the PegaSwitch dependencies:
+
+- For ArchLinux: `sudo pacman -Syu base-devel`
+- For Ubuntu/Debian: `sudo apt-get install build-essential`
+
 You then need to clone and install PegaSwitch.
 
 ```
