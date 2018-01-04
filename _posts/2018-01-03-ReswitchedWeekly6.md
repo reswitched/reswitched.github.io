@@ -22,6 +22,10 @@ on !
   [Take a look](https://github.com/Maschell/PushA_NX).
 - @vgmoose is porting a WiiU homebrew to the Switch ! It's a space game ! It's
   [on github](https://github.com/vgmoose/spacenx).
+- @kgsws is working on a homebrew launcher, using HTTP to download NROs from
+  pegaswitch.
+- @misson20000 is working on the networked FS and general FS structure as well.
+- @roblabla is still hard at work on SaveFS.
 
 ## What happened in the broader community
 
