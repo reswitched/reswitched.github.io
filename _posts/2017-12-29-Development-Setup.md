@@ -182,8 +182,7 @@ Troubleshooting:
 
 With this, you have a fully working development environment. You can compile and
 run NROs and you should also be able to build and run 
-[RetroArch](https://github.com/reswitched/RetroArch) 
-and [Snes9x](https://github.com/libretro/snes9x2010)!
+[RetroArch and Snes9x](https://reswitchedweekly.github.io/Building-RetroArch/)!
 
 But most importantly, you can help us build awesome stuff for the Switch. If you
 are willing to give us a helping hand, don't hesitate to join our
