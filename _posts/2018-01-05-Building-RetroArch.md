@@ -127,8 +127,9 @@ fs directory. Delete both the `retroarch_switch.nro` file as well as the `fs.squ
 
 You should now have a working Snex9x RetroArch which can run on your Switch!
 
-But most importantly, you can help us build awesome stuff for the Switch. If you
-are willing to give us a helping hand, don't hesitate to join our
-[Discord](https://discordapp.com/invite/DThbZ7z).
+If you are willing to give us a helping hand, don't hesitate to join our
+[Discord](https://discordapp.com/invite/DThbZ7z). There is a lot of work left to
+be done, lots of emulators need to be ported. It's time to Emulate All the
+Things !
 
 ### Last Updated: 2018/01/05
