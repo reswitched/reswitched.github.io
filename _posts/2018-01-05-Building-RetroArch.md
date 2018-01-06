@@ -87,7 +87,7 @@ Next up is building [RetroArch](https://github.com/reswitched/RetroArch
 
 ```
 git clone https://github.com/reswitched/RetroArch.git
-cd libtransistor-retroarch
+cd RetroArch
 
 # Create a new folder called fs
 mkdir fs
@@ -112,16 +112,21 @@ If you decide you want to rebuild it to try different roms, be sure to delete bo
 file as well as the `fs.squashfs` files before rebuilding.
 
 Troubleshooting:
-- I'm getting an error `ld.lld-5.0: error: libretro_switch.a(libretro.o) is incompatible with version_git.o
-Makefile.switch:57: recipe for target 'retroarch_switch.nro.so' failed`?
-This means that you probably didn't build `libtransistor-snes9x2010` properly. Go back and ensure you
-build it with the correct platform. Then re-copy the `libretro_switch.a` file into the `libtransistor-retroarch`
-folder.
-- I'm getting an error `No rule to make target 'libretro_switch.a', needed by 'retroarch_switch.nro.so'.  Stop.`?
-This happens when you are missing the `libretro_switch.a` file from the `libtransistor-retroarch` folder.
-- I'm getting the error `[ERROR] Could not read content file "what".` when I run it with PegaSwitch?
-This happens when the rom file hasn't been properly attached. Make sure that your rom file is named `what` in the
-fs directory. Delete both the `retroarch_switch.nro` file as well as the `fs.squashfs` files before rebuilding.
+- I'm getting an error `ld.lld-5.0: error: libretro_switch.a(libretro.o) is incompatible with version_git.o`
+
+  This means that you probably didn't build `libtransistor-snes9x2010` properly. Go back and ensure you
+  build it with the correct platform. Then re-copy the `libretro_switch.a` file into the `libtransistor-retroarch`
+  folder.
+
+- I'm getting an error `No rule to make target 'libretro_switch.a', needed by 'retroarch_switch.nro.so'.  Stop.`.
+
+  This happens when you are missing the `libretro_switch.a` file from the `libtransistor-retroarch` folder.
+
+- I'm getting an error `No rule to make target 'fs/', needed by 'fs.squashfs'. Stop.`.
+
+  This happens because your `fs` folder is empty. You need to put at least one
+  ROM in there for RetroArch to compile properly.
+
 
 ## Where to go from here:
 
@@ -132,4 +137,4 @@ If you are willing to give us a helping hand, don't hesitate to join our
 be done, lots of emulators need to be ported. It's time to Emulate All the
 Things !
 
-### Last Updated: 2018/01/05
+### Last Updated: 2018/01/06
