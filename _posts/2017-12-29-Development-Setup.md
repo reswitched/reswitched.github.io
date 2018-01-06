@@ -21,7 +21,7 @@ download the Reswitched software.
 
 The first thing you'll need is the tools to exploit vulnerabilities on the
 Switch. For this, we use PegaSwitch, an exploit framework. To install PegaSwitch,
-you need a modern version of Node.JS. You can follow the tutorial on the
+you need at least version 8.x of Node.JS. You can follow the tutorial on the
 [Node.JS website](https://nodejs.org/en/download/package-manager/).
 
 You will also need to install the base development tools package for your OS,
