@@ -45,7 +45,7 @@ This will create a DNS and HTTP server on your computer, that your switch needs
 to connect to.
 
 Troubleshooting:
-- PegaSwitch requires use of ports 53, 80 and 8100 in order to run.
+- PegaSwitch requires use of UDP port 53 and TCP ports 80 and 8100 in order to run.
 If another application is using any of those ports, or they are blocked by your 
 firewall, PegaSwitch will not work. 
 - The ace.nro file included in the nros directory is not guaranteed to be up to date
@@ -170,7 +170,7 @@ Troubleshooting:
 
 - I'm not getting any output from the switch when I run `nc -v -l -p 2991`?
 
-  Make sure port 2991 isn't blocked on any firewalls.
+  Make sure TCP port 2991 isn't blocked on any firewalls.
   Stdout in this way is only supported if you load nro files through `ace_loader`.
 
   If you built another nro file and loaded it directly from PegaSwitch then you
