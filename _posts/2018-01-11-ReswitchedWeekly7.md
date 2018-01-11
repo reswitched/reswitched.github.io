@@ -18,6 +18,9 @@ scenes, while everyone is waiting for nvace.
 - Lots of people are hard at work trying to make various RetroArch emulator
   cores work with libtransistor.
 - @3Daniel is working on setting up Doxygen documentation.
+- @kgsws is working on his multiplayer doom port.
+- @roblabla is busy trying to find a way to get backtraces to debug his numerous
+  crashes.
 
 ## What happened in the broader community
 
