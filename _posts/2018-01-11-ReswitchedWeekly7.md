@@ -24,11 +24,12 @@ scenes, while everyone is waiting for nvace.
 
 ## What happened in the broader community
 
-- @GovanifY found a way to crash the ldr:ro module on 2.0.0, allowing dumping of
-  sysmodule code ! He wrote an easy-to-read writeup of the vulnerability,
-  [check it out](https://govanify.com/post/switch-interlude/). And here's the
-  associated [Pull Request](https://github.com/reswitched/pegaswitch/pull/81)
-  for pegaswitch.
+- @GovanifY implemented the ldr:ro crash (first revealed in 34C3) in pegaswitch.
+  It allowing dumping the sysmodules' code ! He wrote an easy-to-read writeup of
+  the vulnerability, [check it out](https://govanify.com/post/switch-interlude/) !
+  And here's the associated [Pull Request](https://github.com/reswitched/pegaswitch/pull/81)
+  for pegaswitch. (Note that it's for 2.0.0-consoles only right now, but it
+  could be extended to any version < 3.0.0).
 
 ## Call for participation
 
