@@ -12,7 +12,7 @@ Too much happened this week. Lots of releases.
 
 ## What happened
 
-- @ScireM confirmed TZhax working on 1.0.0-3.x. This means complete system
+- @SciresM confirmed TZhax working on 1.0.0-3.x. This means complete system
   access on those firmwares. (Do not use that excuse to upgrade your switch.
   Lower versions will get stuff faster, and lower is still better. Each time a
   Switch gets updated, a puppy dies).
@@ -20,10 +20,12 @@ Too much happened this week. Lots of releases.
   appearance. It is open source, made by the same team as citra, is able to
   run homebrew (though not at playable speed), and has a neat GDB stub debugger!
   Should make for a nice Mephisto replacement.
-- @Dan3D's documentation work got merged. The libtransistor documentation is now
-  [live](https://reswitched.github.io/libtransistor/).
+- @3Daniel's documentation work got merged. The libtransistor documentation is
+  now [live](https://reswitched.github.io/libtransistor/).
 - @roblabla's first batch of SwIPC documentation work got merged.
   [PR](https://github.com/reswitched/SwIPC/pull/13)
+- @corenting fixed various python script in libtransistor to work with both Py2
+  and Py3. [PR](https://github.com/reswitched/libtransistor/pull/83)
 
 ## What people are working on
 
