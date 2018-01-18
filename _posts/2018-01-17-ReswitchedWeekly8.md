@@ -44,14 +44,14 @@ much more reverse-engineering. If you're a developer and want to give a hand,
 make sure to hop on [Discord](https://discordapp.com/invite/DThbZ7z) so we can
 coordinate work. Also, if you feel like you need mentoring notes on some of
 those tasks, feel free to ping @roblabla on discord, I can write up what
-needs to be done, and guide you through the process :
+needs to be done, and guide you through the process:
 
-- Documentation ! Enhancing the libtransistor docs, and documenting all the
-  SwIPC methods ! We need to make it *easy* for people to know what each
+- Documentation! Enhancing the libtransistor docs, and documenting all the
+  SwIPC methods! We need to make it *easy* for people to know what each
   function does.
-- Joystick support in SDL2 !
+- Joystick support in SDL2!
 - Implementing more services into libtransistor. We're lacking a bunch of things
   like USB support and whatnot.
 - Thread Local Storage, by implementing emutls.
-- Port apps and libraries. Make sure they work ! We have graphics and audio, the
-  sky is the limit !
+- Port apps and libraries. Make sure they work! We have graphics and audio, the
+  sky is the limit!
