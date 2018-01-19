@@ -8,21 +8,40 @@ In this article, we'll look at what it takes to set up a development environment
 for the nintendo switch. The steps here describe the (un)officially supported
 way to build Homebrew.
 
-You will need an ArchLinux, Debian or Ubuntu (other OSes coming soon), and a
-Switch with the 3.0.0 firmware.
+You will need a supported OS (ArchLinux, Debian/Ubuntu, MacOS, or Windows 10
+build 17046+), and a Switch with the 3.0.0 firmware.
 
-The first thing you'll want to do is install git, as that's what we'll use to
-download the Reswitched software.
+This guide also expects the user to be comfortable with a terminal. If you do
+not know the basics of the terminal (bash, ls, cd, git...), you might want to go
+look for a tutorial online first.
 
-- Archlinux: `sudo pacman -Syu git`
+## Prerequiste
+
+Some OSes will require some tools to be installed before continuing on:
+
+- MacOS users will need to install [Homebrew](https://brew.sh/), a package
+  manager. We'll be using this to cleanly install all the other tools.
+- Windows 10 users will need to install the Windows Subsystem for Linux. You can
+  check [Microsoft's Guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+  Note that only the Ubuntu WSL is tested. From here on, Windows users can
+  follow the same rules as Ubuntu, typing the commands in the WSL bash.
+
+Finally, we'll want to install git, as that's what we'll use to download the
+Reswitched tools.
+
+- MacOS: `brew install git`
+- ArchLinux: `sudo pacman -Syu git`
 - Ubuntu/Debian: `sudo apt-get install git`
 
 ## PegaSwitch
 
 The first thing you'll need is the tools to exploit vulnerabilities on the
-Switch. For this, we use PegaSwitch, an exploit framework. To install PegaSwitch,
-you need at least version 8.x of Node.JS. You can follow the tutorial on the
-[Node.JS website](https://nodejs.org/en/download/package-manager/).
+Switch. For this, we use PegaSwitch, an exploit framework. To install
+PegaSwitch, you need at version version 8.x of Node.JS.
+
+- For MacOS, simply use brew: `brew install node`
+- For other platforms, you can follow the tutorial on the
+  [Node.JS website](https://nodejs.org/en/download/package-manager/).
 
 You will also need to install the base development tools package for your OS,
 as they are necessary to build some of the PegaSwitch dependencies:
@@ -67,9 +86,15 @@ You must use clang version 5, libtransistor will not work with any earlier versi
 ### Dealing with the deps
 
 To start with, you'll need to install a collection of base development tools,
-along with llvm5/clang5, python2 and cmake.
+along with llvm5/clang5, python3 and cmake.
 
-- For ArchLinux, simply run `sudo pacman -Syu base-devel python2 python2-pip cmake clang lld`
+- For MacOS, run `brew install python3 cmake llvm`.
+
+  For compatibility reasons, llvm is installed under `/usr/local/opt/llvm` to
+  avoid conflicting with the rest of the system. You should add that to your PATH :
+  `echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.bash_profile`.
+
+- For ArchLinux, simply run `sudo pacman -Syu base-devel python python-pip cmake clang lld`
 
 - For Ubuntu/Debian, you'll need to add the LLVM repository into
   `/etc/apt/sources.list`. You'll need to find the repositories that match your
@@ -98,7 +123,7 @@ along with llvm5/clang5, python2 and cmake.
 
   ```
   sudo apt-get update
-  sudo apt-get install build-essential python python-pip cmake clang-5.0 lld-5.0
+  sudo apt-get install build-essential python3 python3-pip cmake clang-5.0 lld-5.0
   ```
 
 ### Building libtransistor itself
@@ -109,11 +134,13 @@ libtransistor.
 ```
 git clone --recursive https://github.com/reswitched/libtransistor
 cd libtransistor
-# Install the python dependencies
+# Install the python dependencies. On ArchLinux
 pip install -r requirements.txt
-# For archlinux
+# On everything else
+pip3 install -r requirements.txt
+# Build libtransistor. For MacOS and ArchLinux
 make
-# For ubuntu/debian
+# For Ubuntu/Debian
 make LLVM_POSTFIX=-5.0
 ```
 
@@ -188,4 +215,4 @@ But most importantly, you can help us build awesome stuff for the Switch. If you
 are willing to give us a helping hand, don't hesitate to join our
 [Discord](https://discordapp.com/invite/DThbZ7z).
 
-### Last Updated: 2017/12/29
+### Last Updated: 2018/01/19
