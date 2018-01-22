@@ -112,7 +112,7 @@ along with llvm5/clang5, python3 and cmake.
   deb-src http://apt.llvm.org/xenial/ llvm-toolchain-xenial-5.0 main
   ```
 
-  You should also add the LLVM signature key :
+  You should also fetch the LLVM signature key :
 
   ```
   wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
