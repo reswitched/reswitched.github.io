@@ -34,7 +34,7 @@ if you could build them.
 Before being able to build RetroArch, we need to build the Snes9x-2010 core. But before
 building the Snes9x-2010 core, we have to ensure that we are using the correct branch of
 libtransistor. While graphics have now been merged into the main libtransistor, there are
-still some file system related things that are still pending as of 2018/01/05.
+still some file system related things that are still pending as of 2018/02/01.
 
 In order to compile RetroArch, you will first need to get the 
 [fs](https://github.com/reswitched/libtransistor/tree/fs) branch of libtransistor and 
