@@ -1,38 +1,30 @@
 ---
 layout: post
-title: Reswitched Weekly 10
-category: reswitchedweekly
+title: Reswitched Weekly 11
+1ategory: reswitchedweekly
 ---
 
 Hello and welcome to Reswitched Weekly, a weekly summary of the progress
 made by the reswitched team and wider community around homebrew development for
 the Nintendo Switch.
 
-After the fairly eventful week we had, things are settling down again. C++
-support is finally in a working state, and libtransistor got some
-S T A B I L I T Y.
+This week, @SciresM released some new tools. New, shiny tools.
 
 ## What happened
 
-- @dvdfreitag's CPP port is now working! Well, almost. Exception-handling is
-  broken.
-- @misson20000 got filesystem merged into master ! This involved changing the
-  squashfs compression method, which should now be easy to use.
-- Speaking of master, *it disappeared*! We now have a stable branch that should
-  only contain thoroughly tested code, and a development branch with the latest,
-  potentially less well-tested goodies.
-- @DavidBuchanan314 added networked filesystem support, very useful for saves
-  and stuff. You can see his guide to using it [there](https://gist.github.com/DavidBuchanan314/faf2278b653332625a163a51a08281ee)
+- @SciresM released [hactool](https://github.com/sciresm/hactool), allowing to
+  view information about, decrypt, and extract common file formats for the
+  Switch. You need to Bring your own Keys!
+- @SciresM also released a [KIP1 loader](https://github.com/reswitched/loaders),
+  allowing easy reverse engineering of builtins.
+- @DavidBuchanan314 added touchscreen support to libtransistor!
+  [See the PR](https://github.com/reswitched/libtransistor/pull/94).
 
 ## What people are working on
 
-- @Daeken is working on 3D graphics. He got an ELF loader to work on the switch,
-  loading the nvidia tegra libraries. It now needs wrappers to be made. See [the
-  code](https://github.com/daeken/traNVparency) and a
-  [todo](https://checkvist.com/checklists/658460-tranvparency?widget=true).
-- @roblabla is beating [libtransistor-rs](https://github.com/roblabla/libtransistor-rs)
-  back into shape.
-- Stary is porting Bochs (an x86 emulator) on the Nintendo Switch.
+- @Daeken is working on 3D graphics, see [traNVparency](https://github.com/daeken/traNVparency).
+  To make his work easier, he patched nxdbg to include a CLI UI and a network
+  interface. See [here](https://github.com/daeken/nxdbg).
 
 ## Call for participation
 
