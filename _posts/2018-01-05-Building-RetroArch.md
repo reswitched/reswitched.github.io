@@ -21,52 +21,21 @@ Credit to Mission20000 for the original work on these ports.
 a new copy of the emulator every time you want to add or remove roms.
 - Input / controls are still under development. They may work well, or not at all. 
 This is NOT a bug.
-- Switch Joycons must be used in detached mode (NOT connected to the sides of the
-Switch console otherwise the input / controls won't work.
-- You will probably need to reboot the console to quit the game / emulator.
+- Switch Joycons can be used in either detached or attached mode.
+- You will need to press both + and - at the same time to return to the RetroArch menu from inside a game
 - You can attempt to build other cores for RetroArch than Snes9x, but many will fail due to 
 requirements such as needing to use the file system, or needing specific graphics
 systems. Some cores for newer systems such as N64, PSX etc are not able to run yet, even 
-if you could build them.
+if you could build them. You can view a list of the cores and their status here: https://docs.google.com/spreadsheets/d/11Q21oCxj_xZ08QzpvwBuHDiuKkGjTFKRWRl2ZweFPCU/
 
 ## Snes9x-2010
 
-Before being able to build RetroArch, we need to build the Snes9x-2010 core. But before
-building the Snes9x-2010 core, we have to ensure that we are using the correct branch of
-libtransistor. While graphics have now been merged into the main libtransistor, there are
-still some file system related things that are still pending as of 2018/02/01.
+Before being able to build RetroArch, we need to build the Snes9x-2010 core. Previously when building
+Snes9x you were required to build libtransistor from a different branch. All of those pre-requisites
+for being able to build Snes9x have now been merged into the mainline of libtransistor so there is no
+need to build other branches.
 
-In order to compile RetroArch, you will first need to get the 
-[fs](https://github.com/reswitched/libtransistor/tree/fs) branch of libtransistor and 
-compile it. If you already have libtransistor checked out, you can simply `git checkout 
-origin/fs`. Or if you would rather checkout just the specific branch, you can use `git 
-clone --recursive -b fs https://github.com/reswitched/libtransistor.git`. 
-Once you have the branch checked out, you can run `make` on libtransistor.
-
-Troubleshooting:
-- I'm getting an error about `implicit declaration of function 'closedir'` or `<dirent.h> 
-  not supported` or `unknown type name 'DIR'`?
-
-  See the section below about updating submodules.
-
-- I'm getting an error about `libtransistor/sdl2/configure: not found` or `libtransistor/build
-/sdl2/Makefile' failed`?
-
-  The SDL2 submodule hasn't been updated properly. See the section below about
-  updating submodules.
-
-### Updating Submodules
-
-The fs branch of libtransistor uses a different revision of the newlib 
-submodule, which includes a working dirent.h header. Run `git submodule update`. If that 
-doesnt work, try `git submodule update --init --recursive`. If that still hasn't properly 
-updated the submodules then you may need to try just checking out the specific branch into 
-a new directory: `git clone --recursive -b fs 
-https://github.com/reswitched/libtransistor.git`.
-
-Once you have built the fs branch of libtransistor, you can now move 
-on to Snes9x. Checkout [libtransistor-snes9x2010](https://github.com/reswitched/libtransistor-snes9x2010)
-and make it as follows:
+Once you have built libtransistor, you can now move on to Snes9x. Checkout [libtransistor-snes9x2010](https://github.com/reswitched/libtransistor-snes9x2010) and make it as follows:
 
 ```
 git clone https://github.com/reswitched/libtransistor-snes9x2010.git
@@ -83,7 +52,7 @@ in your libtransistor-snes9x2010 folder.
 
 ## RetroArch
 
-Next up is building [RetroArch](https://github.com/reswitched/RetroArch
+Next up is building [RetroArch](https://github.com/reswitched/RetroArch)
 
 ```
 git clone https://github.com/reswitched/RetroArch.git
@@ -102,7 +71,7 @@ won't tell you where to get them, do not ask) and copy it into the fs folder tha
 Once the rom file is in the fs folder, rename the file so that the name does NOT contain any spaces.
 If you want to include more than one rom file, just place them all into the fs folder before building.
 
-Now you are ready to make it: `make -f Makefile.switch LIBTRANSISTOR_HOME=/path/to/libtransistor/fs/branch`
+Now you are ready to make it: `make -f Makefile.switch LIBTRANSISTOR_HOME=/path/to/libtransistor/`
 
 You can now take the resulting `retroarch_switch.nro` file and load it via PegaSwitch and ace_loader.
 Then from the RetroArch menu screen, select `Load Content`, navigate to the `/` folder and select the rom
@@ -137,4 +106,4 @@ If you are willing to give us a helping hand, don't hesitate to join our
 be done, lots of emulators need to be ported. It's time to Emulate All the
 Things !
 
-### Last Updated: 2018/01/06
+### Last Updated: 2018/02/14
