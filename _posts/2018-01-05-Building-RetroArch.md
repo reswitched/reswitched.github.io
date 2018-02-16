@@ -13,7 +13,7 @@ in the [Development Environment Setup Guide](https://reswitchedweekly.github.io/
 Disclaimer: The instructions in this section relate to projects that are under
 active development. These instructions will probably become out of date quickly.
 
-Credit to Mission20000 for the original work on these ports.
+Credit to Misson20000 for the original work on these ports.
 
 ## Limitations:
 
@@ -21,7 +21,6 @@ Credit to Mission20000 for the original work on these ports.
 a new copy of the emulator every time you want to add or remove roms.
 - Input / controls are still under development. They may work well, or not at all. 
 This is NOT a bug.
-- Switch Joycons can be used in either detached or attached mode.
 - You will need to press both + and - at the same time to return to the RetroArch menu from inside a game
 - You can attempt to build other cores for RetroArch than Snes9x, but many will fail due to 
 requirements such as needing to use the file system, or needing specific graphics
@@ -30,10 +29,12 @@ if you could build them. You can view a list of the cores and their status here:
 
 ## Snes9x-2010
 
-Before being able to build RetroArch, we need to build the Snes9x-2010 core. Previously when building
-Snes9x you were required to build libtransistor from a different branch. All of those pre-requisites
-for being able to build Snes9x have now been merged into the mainline of libtransistor so there is no
-need to build other branches.
+Before being able to build RetroArch, we need to build the Snes9x-2010 core, which requires you to [build 
+libtransistor](https://reswitchedweekly.github.io/Development-Setup/#libtransistor). 
+
+Note: Previously when building Snes9x you were required to build libtransistor from a different 
+branch. All of those pre-requisites for being able to build Snes9x have now been merged into the mainline 
+of libtransistor so there is no need to build other branches.
 
 Once you have built libtransistor, you can now move on to Snes9x. Checkout [libtransistor-snes9x2010](https://github.com/reswitched/libtransistor-snes9x2010) and make it as follows:
 
