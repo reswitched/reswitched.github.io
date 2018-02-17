@@ -132,7 +132,7 @@ along with llvm5/clang5, python3 and cmake.
 
   ```
   sudo apt-get update
-  sudo apt-get install build-essential python3 python3-pip cmake clang-5.0 lld-5.0
+  sudo apt-get install build-essential automake autoconf python3-setuptools squashfs-tools python3 python3-dev python3-pip cmake clang-5.0 lld-5.0
   ```
 
 ### Building libtransistor itself
