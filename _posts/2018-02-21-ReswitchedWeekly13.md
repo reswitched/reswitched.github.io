@@ -70,7 +70,7 @@ This way, I can include your stuff in here :D.
 [Github Project]: https://github.com/SciresM/Atmosphere-NX/projects
 [PR 109]: https://github.com/reswitched/libtransistor/pull/109
 [PR 103]: https://github.com/reswitched/libtransistor/pull/103
-[switch\_pr]: https://github.com/TuxSH/ftpd/tree/switch_pr
+[switch_pr]: https://github.com/TuxSH/ftpd/tree/switch_pr
 [switch branch]: https://github.com/TurtleP/LovePotion/tree/switch
 [next week's issue]: https://github.com/ReswitchedWeekly/ReswitchedWeekly.github.io/issues/27.
 [Discord]: https://discordapp.com/invite/DThbZ7z
