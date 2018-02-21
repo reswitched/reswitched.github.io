@@ -66,7 +66,7 @@ This way, I can include your stuff in here :D.
 
 [nx-hbexploit300]: https://github.com/switchbrew/nx-hbexploit300
 [nx-hbmenu]: https://github.com/switchbrew/nx-hbmenu
-[Atmosphère]: https://github.com/sciresm/Atmosphere-NX
+[Atmosphère-NX]: https://github.com/sciresm/Atmosphere-NX
 [Github Project]: https://github.com/SciresM/Atmosphere-NX/projects
 [PR 109]: https://github.com/reswitched/libtransistor/pull/109
 [PR 103]: https://github.com/reswitched/libtransistor/pull/103
