@@ -29,6 +29,7 @@ developments.
 ## What people are working on
 
 - @roblabla is working on bringing SD Card support to libtransistor. [PR 109]
+- @roblabla also did a bunch of fixes to his SwIPC code generator. [PR 9]
 - @misson20000 is splitting up the `ace_loader` into multiple modules. [PR 103]
 - @TuxSH is working on porting FTPd to the switch. This is very useful for
   developers who want to reduce their edit-build-test cycle. Look at the
@@ -38,11 +39,18 @@ developments.
 
 ## Call for participation
 
-Lots of things could be implemented properly into libtransistor/newlib without
-much more reverse-engineering. If you're a developer and want to give a hand,
-make sure to hop on [Discord] so we can coordinate work. Also, if you feel like
-you need mentoring notes on some of those tasks, feel free to ping @roblabla on
-discord, I can write up what needs to be done, and guide you through the process:
+Reswitched is always looking for people to work on the various projects. If you
+want to give a helping hand, hop on the [Discord] so we can coordinate the work!
+
+More specifically, if you're interested in working on Atmosphère and have the
+relevant experience, send a DM to @SciresM on Discord.
+
+In the libtransistor department, a lot of things could be implemented without
+much requirements beyond "knowing C". Below are a list of issues, of varying
+difficulty, that we feel the community could help on. If you're interested in
+working on those, but need some help, feel free to reach out to @roblabla on
+Discord. I'll be glad to write some mentoring notes on what needs to be done,
+and to guide you through the process.
 
 - Documentation work!
   - Enhancing the libtransistor docs. You can take a look at
@@ -72,5 +80,6 @@ This way, I can include your stuff in here :D.
 [PR 103]: https://github.com/reswitched/libtransistor/pull/103
 [switch_pr]: https://github.com/TuxSH/ftpd/tree/switch_pr
 [switch branch]: https://github.com/TurtleP/LovePotion/tree/switch
+[PR 9]: https://github.com/reswitched/SwIPC/pull/9
 [next week's issue]: https://github.com/ReswitchedWeekly/ReswitchedWeekly.github.io/issues/27
 [Discord]: https://discordapp.com/invite/DThbZ7z
