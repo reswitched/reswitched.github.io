@@ -32,7 +32,7 @@ developments.
 - @misson20000 is splitting up the `ace_loader` into multiple modules. [PR 103]
 - @TuxSH is working on porting FTPd to the switch. This is very useful for
   developers who want to reduce their edit-build-test cycle. Look at the
-  [switch\_pr] branch.
+  [switch_pr] branch.
 - @TurtleP is working on LovePotion. Work is ongoing in the input handling
   department. Look at LovePotion's [switch branch]
 
@@ -72,5 +72,5 @@ This way, I can include your stuff in here :D.
 [PR 103]: https://github.com/reswitched/libtransistor/pull/103
 [switch_pr]: https://github.com/TuxSH/ftpd/tree/switch_pr
 [switch branch]: https://github.com/TurtleP/LovePotion/tree/switch
-[next week's issue]: https://github.com/ReswitchedWeekly/ReswitchedWeekly.github.io/issues/27.
+[next week's issue]: https://github.com/ReswitchedWeekly/ReswitchedWeekly.github.io/issues/27
 [Discord]: https://discordapp.com/invite/DThbZ7z
