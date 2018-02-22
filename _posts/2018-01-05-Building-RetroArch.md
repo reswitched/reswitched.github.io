@@ -41,11 +41,10 @@ Once you have built libtransistor, you can now move on to Snes9x. Checkout [libt
 ```
 git clone https://github.com/reswitched/libtransistor-snes9x2010.git
 cd libtransistor-snes9x2010
-make platform=switch LIBTRANSISTOR_HOME=/path/to/libtransistor/fs/branch
+make platform=switch LIBTRANSISTOR_HOME=/path/to/libtransistor
 ```
 Depending on whether you already set an environment variable for LIBTRANSISTOR_HOME, you 
-may need to put the path in to the make command as well. Ensure that the path is to the 
-fs branch that you have just built.
+may need to put the path in to the make command as well.
 
 When it has successfully finished building, you will have a file called `snes9x2010_libretro_switch.a`
 in your libtransistor-snes9x2010 folder.
