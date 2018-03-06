@@ -23,13 +23,13 @@ We're doing two weeks for the price of one this time (again).We got sd card supp
 - @roblabla made some fixes to Mephisto's fsp-srv emulation. Closed file handles will now get flushed to disk, and you can now call ReadDirectory.he also added support for loading KIPs in Mephisto.
 - @Thog added some more BSD socket functions.
 - @roblabla added sd card support to libtransistor.
-See all the changes at [the latest prerelease][https://github.com/reswitched/libtransistor/releases/tag/v1.2.0-rc2]
+See all the changes at [the latest prerelease](https://github.com/reswitched/libtransistor/releases/tag/v1.2.0-rc2)
 
 ## What people are working on
 
 - @roblabla is working on a standalone toolchain in rust, [Megaton Hammer](https://github.com/roblabla/megaton-hammer)
 - @misson20000 is working on getting binary distributions rolling for libtransistor.
-- @misson20000 has started working on a native C++ api for libtransistor. [discussion here][https://github.com/reswitched/libtransistor/pull/123]
+- @misson20000 has started working on a native C++ api for libtransistor. [discussion here](https://github.com/reswitched/libtransistor/pull/123)
 
 ## Call for participation
 
