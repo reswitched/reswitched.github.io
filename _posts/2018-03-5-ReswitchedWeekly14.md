@@ -23,7 +23,8 @@ We're doing two weeks for the price of one this time (again).We got sd card supp
 - @roblabla [made some fixes](https://github.com/reswitched/Mephisto/pull/28) to Mephisto's fsp-srv emulation. Closed file handles will now get flushed to disk, and you can now call ReadDirectory.he also added support for loading KIPs in Mephisto.
 - @Thog [added](https://github.com/reswitched/libtransistor/pull/108) some more BSD socket functions.
 - @roblabla [added](https://github.com/reswitched/libtransistor/pull/109) sd card support to libtransistor.
-See all the changes at [the latest prerelease](https://github.com/reswitched/libtransistor/releases/tag/v1.2.0-rc2)
+
+See all the changes at [the latest release](https://github.com/reswitched/libtransistor/releases/tag/v1.2.0)
 
 ## What people are working on
 
