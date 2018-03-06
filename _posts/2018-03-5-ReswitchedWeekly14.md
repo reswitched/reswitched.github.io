@@ -13,16 +13,16 @@ We're doing two weeks for the price of one this time (again).We got sd card supp
 	- **IMPORTANT**: All libraries and support files are now installed into the
 	  dist/ subfolder. `LIBTRANSISTOR_HOME` should point to this /path/to/libtransistor/dist
 	  directory, not the /path/to/libtransistor/ directory anymore.
-	- @dvdfreitag added rules to prevent building with root. For those who laugh this came up more than once.
-	- @roblabla made MacOS users' life easier, by removing the requirement to add llvm's prefix to PATH. Libtransistor will now ask brew for the prefix on it's own.
-	- @misson20000 cleaned up the build system for binary packaging.
-	- @horicon added some fixes to the build system relating to clean up.
-- @misson20000 fixed a number of bugs for nxodance. In doing so fixed c++ exceptions. Full c++ support has been merged.
-- @misson20000 split ace_loader into 2 parts. wk_ace for cleaning up the browser and sysmod_ace for loading the NROs.
-- @roblabla made some big fixes were done to the WIP code generator of SwIPC
-- @roblabla made some fixes to Mephisto's fsp-srv emulation. Closed file handles will now get flushed to disk, and you can now call ReadDirectory.he also added support for loading KIPs in Mephisto.
-- @Thog added some more BSD socket functions.
-- @roblabla added sd card support to libtransistor.
+	- @dvdfreitag [added](https://github.com/reswitched/libtransistor/pull/120) rules to prevent building with root - fixing a surprisingly common class of problems...
+	- @roblabla [made](https://github.com/reswitched/libtransistor/pull/116) MacOS users' life easier, by removing the requirement to add llvm's prefix to PATH. Libtransistor will now ask brew for the prefix on it's own.
+	- @misson20000 [cleaned](https://github.com/reswitched/libtransistor/pull/121) up the build system for binary packaging.
+	- @horicon [fixed](https://github.com/reswitched/libtransistor/pull/125) the clean and distclen rules.
+- @misson20000 [fixed](https://github.com/reswitched/libtransistor/commit/1ef789f56cb94668da2089e5b83d6b82690f2806) C++ a number of bugs for nxodance. In doing so fixed c++ exceptions. Full c++ support has been merged.
+- @misson20000 [split](https://github.com/reswitched/libtransistor/pull/103) ace_loader into 2 parts. wk_ace for cleaning up the browser and sysmod_ace for loading the NROs.
+- @roblabla [overhauled](https://github.com/reswitched/SwIPC/pull/9) the WIP code generator of SwIPC, which will now stop trying to generate function with types it does not understand.
+- @roblabla [made some fixes](https://github.com/reswitched/Mephisto/pull/28) to Mephisto's fsp-srv emulation. Closed file handles will now get flushed to disk, and you can now call ReadDirectory.he also added support for loading KIPs in Mephisto.
+- @Thog [added](https://github.com/reswitched/libtransistor/pull/108) some more BSD socket functions.
+- @roblabla [added](https://github.com/reswitched/libtransistor/pull/109) sd card support to libtransistor.
 See all the changes at [the latest prerelease](https://github.com/reswitched/libtransistor/releases/tag/v1.2.0-rc2)
 
 ## What people are working on
