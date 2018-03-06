@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reswitched Weekly 13
-1ategory: reswitchedweekly
+category: reswitchedweekly
 ---
 
 Hello and welcome to Reswitched Weekly, a weekly summary of the progress
