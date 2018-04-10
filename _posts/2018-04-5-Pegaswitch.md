@@ -39,8 +39,6 @@ Troubleshooting:
 - PegaSwitch requires use of UDP port 53 and TCP ports 80 and 8100 in order to run.
 If another application is using any of those ports, or they are blocked by your
 firewall, PegaSwitch will not work.
-- The ace.nro file included in the nros directory is not guaranteed to be up to date
-or even to work. Please always build the latest ace.nro file from libtransistor.
 - My Switch forces me to update before starting the browser !
 
   To fix this, you need to restart your switch in Recovery Mode/Maintenance Mode.

@@ -52,7 +52,7 @@ along with llvm5/clang5, python3 and cmake.
   avoid conflicting with the rest of the system. You should add that to your PATH :
   `echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.bash_profile`.
 
-- For ArchLinux, install one of the aur packages or  simply run `sudo pacman -Syu base-devel python python-pip cmake clang lld`
+- For ArchLinux, install one of the AUR packages (libtransistor-bin or libtransistor-git) or  simply run `sudo pacman -Syu base-devel python python-pip cmake clang lld`
 
 - For Ubuntu/Debian, you'll need to add the LLVM repository into
   `/etc/apt/sources.list`. You'll need to find the repositories that match your
@@ -86,20 +86,20 @@ along with llvm5/clang5, python3 and cmake.
 
 ### Installing libtransistor
 
-The recommended way to install install libtransistor through binary disturbutions. If you have a need to be on the unstable branch. Then continue down to "Building libtransistor itself".
-For Arch the simplest thing to do is install [libtransistor-bin](https://aur.archlinux.org/packages/libtransistor-bin/) from the aur.
-For every other distribution follow the rest of the instructions.
+The recommended way to install install libtransistor is through the  binary distibutions. If you have a need to be on the unstable branch. Then continue down to "Building libtransistor itself".
+For Arch the simplest thing to do is install [libtransistor-bin](https://AUR.archlinux.org/packages/libtransistor-bin/) from the AUR.
+For every other distribution, follow the rest of the instructions.
 First you need to obtain a copy of libtransistor. The easiest way to that is go to [libtransistor releases](https://github.com/reswitched/libtransistor/releases) and download the most recent version. For example
 ```wget https://github.com/reswitched/libtransistor/releases/download/vXXX/libtransistor_vXXX.tar.gz```. Replace XXX(both) with whatever the most recent version is.
 ```
-cd path/to/folder/where/libtransistor_vXXX.tar.gz/
+cd path/to/the/download/location
 sudo mkdir -p /opt/libtransistor
 sudo tar -C /opt/libtransistor -xvzf libtransistor_vXXX.tar.gz ./
 ```
 You should probably set the `LIBTRANSISTOR_HOME` environment variable to your
 `libtransistor` folder, as this is how `make` will find where libtransistor is.
 You can do that by writing `export LIBTRANSISTOR_HOME=/path/to/libtransistor/dist` in
-your shell's RC file (`~/.bashrc` for instance). The aur packages put it in `/etc/profile.d/libtransistor.sh`.
+your shell's RC file (`~/.bashrc` for instance). The AUR packages put it in `/etc/profile.d/libtransistor.sh`.
 
 ### Building libtransistor itself
 
@@ -139,7 +139,7 @@ your shell's RC file (`~/.bashrc` for instance).
 
 
 ## Where to go from here:
-Optionaly set  up [Pegaswith](https://reswitchedweekly.github.io/Pegaswitch/).
+Optionaly set  up [Pegaswitch](https://reswitchedweekly.github.io/Pegaswitch/).
 With this, you have a fully working development environment. You can compile and
 run NROs and you should also be able to build and run
 
