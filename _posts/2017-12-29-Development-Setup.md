@@ -33,57 +33,6 @@ Reswitched tools.
 - ArchLinux: `sudo pacman -Syu git`
 - Ubuntu/Debian: `sudo apt-get install git`
 
-## PegaSwitch
-
-The first thing you'll need is the tools to exploit vulnerabilities on the
-Switch. For this, we use PegaSwitch, an exploit framework. To install
-PegaSwitch, you need at version version 8.x of Node.JS.
-
-- For MacOS, simply use brew: `brew install node`
-- For other platforms, you can follow the tutorial on the
-  [Node.JS website](https://nodejs.org/en/download/package-manager/).
-
-You will also need to install the base development tools package for your OS,
-as they are necessary to build some of the PegaSwitch dependencies:
-
-- For ArchLinux: `sudo pacman -Syu base-devel`
-- For Ubuntu/Debian: `sudo apt-get install build-essential`
-
-You then need to clone and install PegaSwitch.
-
-```
-git clone https://github.com/reswitched/pegaswitch
-cd pegaswitch
-# Install the pegaswitch dependencies
-npm i
-# Start pegaswitch
-sudo node start.js 
-```
-
-This will create a DNS and HTTP server on your computer, that your switch needs
-to connect to.
-
-Troubleshooting:
-- PegaSwitch requires use of UDP port 53 and TCP ports 80 and 8100 in order to run.
-If another application is using any of those ports, or they are blocked by your 
-firewall, PegaSwitch will not work. 
-- The ace.nro file included in the nros directory is not guaranteed to be up to date
-or even to work. Please always build the latest ace.nro file from libtransistor.
-- My Switch forces me to update before starting the browser !
-
-  To fix this, you need to restart your switch in Recovery Mode/Maintenance Mode.
-  Doing so will make your switch forget there is an existing update. To reboot
-  in this mode, power off your switch completely (press power multiple seconds,
-  and press "Power options" -> "Power off"). Then, hold Volume Down/Volume Up
-  buttons, and press power **while keeping those buttons held**. Once in
-  Recovery mode, just press power to restart your switch, and try connecting
-  to Pegaswitch again.
-
-Things to expect:
-- Once you exit PegaSwitch on your console, the console will probably crash. This
-is normal.
-- You will also see an error when you reboot about your mii database being corrupted.
-This is also normal. Yes, all of your miis have been deleted too.
 
 ## Libtransistor
 
@@ -103,7 +52,7 @@ along with llvm5/clang5, python3 and cmake.
   avoid conflicting with the rest of the system. You should add that to your PATH :
   `echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.bash_profile`.
 
-- For ArchLinux, simply run `sudo pacman -Syu base-devel python python-pip cmake clang lld`
+- For ArchLinux, install one of the AUR packages (libtransistor-bin or libtransistor-git) or  simply run `sudo pacman -Syu base-devel python python-pip cmake clang lld`
 
 - For Ubuntu/Debian, you'll need to add the LLVM repository into
   `/etc/apt/sources.list`. You'll need to find the repositories that match your
@@ -135,6 +84,23 @@ along with llvm5/clang5, python3 and cmake.
   sudo apt-get install build-essential automake autoconf python3-setuptools squashfs-tools python3 python3-dev python3-pip cmake clang-5.0 lld-5.0
   ```
 
+### Installing libtransistor
+
+The recommended way to install install libtransistor is through the  binary distibutions. If you have a need to be on the unstable branch. Then continue down to "Building libtransistor itself".
+For Arch the simplest thing to do is install [libtransistor-bin](https://AUR.archlinux.org/packages/libtransistor-bin/) from the AUR.
+For every other distribution, follow the rest of the instructions.
+First you need to obtain a copy of libtransistor. The easiest way to that is go to [libtransistor releases](https://github.com/reswitched/libtransistor/releases) and download the most recent version. For example
+```wget https://github.com/reswitched/libtransistor/releases/download/vXXX/libtransistor_vXXX.tar.gz```. Replace XXX(both) with whatever the most recent version is.
+```
+cd path/to/the/download/location
+sudo mkdir -p /opt/libtransistor
+sudo tar -C /opt/libtransistor -xvzf libtransistor_vXXX.tar.gz ./
+```
+You should probably set the `LIBTRANSISTOR_HOME` environment variable to your
+`libtransistor` folder, as this is how `make` will find where libtransistor is.
+You can do that by writing `export LIBTRANSISTOR_HOME=/path/to/libtransistor/dist` in
+your shell's RC file (`~/.bashrc` for instance). The AUR packages put it in `/etc/profile.d/libtransistor.sh`.
+
 ### Building libtransistor itself
 
 With the dependencies out of the way, you'll need to actually clone and build
@@ -143,11 +109,11 @@ libtransistor.
 ```
 git clone --recursive https://github.com/reswitched/libtransistor
 cd libtransistor
-# Install the python dependencies. On ArchLinux
+# Install the python dependencies. On Arch Linux
 pip install -r requirements.txt
 # On everything else
 pip3 install -r requirements.txt
-# Build libtransistor. For MacOS and ArchLinux
+# Build libtransistor. For MacOS and Arch Linux
 make
 # For Ubuntu/Debian
 make LLVM_POSTFIX=-5.0
@@ -168,60 +134,19 @@ switch, it should run !
 
 You should probably set the `LIBTRANSISTOR_HOME` environment variable to your
 `libtransistor` folder, as this is how `make` will find where libtransistor is.
-You can do that by writing `export LIBTRANSISTOR_HOME=/path/to/libtransistor` in
+You can do that by writing `export LIBTRANSISTOR_HOME=/path/to/libtransistor/dist` in
 your shell's RC file (`~/.bashrc` for instance).
 
-## Ace Loader
-
-Ace Loader is the first "Homebrew" that you should launch on your switch. It
-has three jobs : 
-
-- Clean up the browser and everything else so your Homebrew gets a clean
-environment to run in
-- Set up stdio redirections to a TCP server, so you can get some debug output.
-- Create a server on which you can push NROs to load, or run some simple
-commands.
-
-To compile it, go back into your libtransistor folder, and go into
-`projects/ace_loader` and run `make` in there. This will generate an
-`ace.nro` file that you can load with pegaswitch.
-
-If you want to get stdout from a homebrew application, you should run the command
-`nc -v -l -p 2991` in another terminal BEFORE loading ace.nro. When ace.nro first
-starts, it will attempt to connect to the PC running PegaSwitch on port 2991 in 
-order to send all output via the network. Once ace.nro has finished loading, you
-will see your Switch's ip address in the log.
-
-To run other NROs afterward, you'll need to connect on your switch IP, port
-`2991`. You can use the following command to run the helloworld example :
-`ncat --send-only switchip 2991 < build/tests/test_helloworld.nro`.
-
-Troubleshooting:
-
-- Command ncat / nc not found?
-
-  Try installing nmap. 
-  `sudo apt-get install nmap` on Ubuntu/Debian, or
-  `sudo pacman -Syu nmap` on ArchLinux.
-
-- I'm not getting any output from the switch when I run `nc -v -l -p 2991`?
-
-  Make sure TCP port 2991 isn't blocked on any firewalls.
-  Stdout in this way is only supported if you load nro files through `ace_loader`.
-
-  If you built another nro file and loaded it directly from PegaSwitch then you
-  won't see any output. Make sure you have built the latest version of
-  `ace_loader` from inside libtransistor. The version of ace.nro that comes with
-  PegaSwitch may be old.
 
 ## Where to go from here:
-
+Optionaly set  up [Pegaswitch](https://reswitchedweekly.github.io/Pegaswitch/).
 With this, you have a fully working development environment. You can compile and
-run NROs and you should also be able to build and run 
+run NROs and you should also be able to build and run
+
 [RetroArch and Snes9x](https://reswitchedweekly.github.io/Building-RetroArch/)!
 
 But most importantly, you can help us build awesome stuff for the Switch. If you
 are willing to give us a helping hand, don't hesitate to join our
 [Discord](https://discordapp.com/invite/DThbZ7z).
 
-### Last Updated: 2018/01/19
+### Last Updated: 2018/04/09
