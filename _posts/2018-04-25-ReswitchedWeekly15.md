@@ -62,7 +62,7 @@ Libtransistor saw a number of improvement thanks to the epic work of @misson2000
 - Thread and mutex primitives were added.
   - Thread primitives can be found here: [See commit](https://github.com/reswitched/libtransistor/commit/7f7ac8586b30d77c3f6ec62318614427e2ba3bc2)
   - Mutexes: [See commit](https://github.com/reswitched/libtransistor/commit/5ee8dcc540beb87dd887eaf5af188202c99b509a)
-  - And a lot of work was done to ensure the thread safety of the existing components.
+  - And some work was done to ensure the thread safety of the existing components.
 
 ## What happened: Atmosphere Custom Firmware
 
@@ -87,6 +87,10 @@ being fully functional replacements of their stock counterparts.
 ## What people are working on
 
 - @roblabla is working on a standalone toolchain in rust, [Megaton Hammer](https://github.com/roblabla/megaton-hammer). Currently working on fixing the allocator.
+- @misson20000 is working on Twili, a sysmodule launcher that will provide
+  stdio and crash reporting.
+- @misson20000 also got a toy dynamic loader into libtransistor, paving the way
+  for dynamic cores in RetroArch and traNVparency improvements. [See PR](https://github.com/reswitched/libtransistor/pull/143)
 
 ## Call for participation
 
