@@ -109,7 +109,7 @@ Note that, if you were not connected to the correct DNS servers, this method wou
 1. In the "Software Update" tab, select "Via the Internet"
 1. The browser applet will launch
 
-```
+```bash
 git clone https://github.com/reswitched/pegaswitch
 cd pegaswitch
 # Install the pegaswitch dependencies
