@@ -91,6 +91,8 @@ being fully functional replacements of their stock counterparts.
   stdio and crash reporting.
 - @misson20000 also got a toy dynamic loader into libtransistor, paving the way
   for dynamic cores in RetroArch and traNVparency improvements. [See PR](https://github.com/reswitched/libtransistor/pull/143)
+- @ktemkin is working on the SDMMC driver for Atmosphere's Fusee. [See here](https://github.com/Atmosphere-NX/Atmosphere/blob/alt_sdmmc/fusee/fusee-primary/src/sdmmc.c)
+- @SciresM is working on the custom Loader implementation.
 
 ## Call for participation
 
@@ -98,7 +100,9 @@ Reswitched is always looking for people to work on the various projects. If you
 want to give a helping hand, hop on the [Discord] so we can coordinate the work!
 
 If you want to work on Atmosphère, feel free to send a DM to @SciresM on
-Discord.
+Discord. People can easily work on Fusee (getting the SDMMC driver to work, for
+instance) by using Fusee-Gelee, or work on custom sysmodules, starting them with
+nspwn.
 
 In the libtransistor department, a lot of things could be implemented without
 much requirements beyond "knowing C". Below are a list of issues, of varying
