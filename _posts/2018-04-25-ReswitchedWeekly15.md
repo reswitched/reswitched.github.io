@@ -9,7 +9,7 @@ made by the reswitched team and wider community around homebrew development for
 the Nintendo Switch.
 
 Almost two months happened, and boy was it a ride! Keys were leaked, bugs were
-revealed, improvements were made.
+revealed, and improvements were made.
 
 ## What happened: The Exploits
 
@@ -37,7 +37,7 @@ over them, what they allow and why they're important:
   vulnerability, we can simply call `SetProgramNcaPath` to set the title's
   executable to our malicious NSP file.
 
-- Fusee-Gelee, AKA shofel2, AKA Fuzzy Jellies, AKA Fussy Julie, AKA memecpy,
+- Fusèe-Gelèe, AKA shofel2, AKA Fuzzy Jellies, AKA Fussy Julie, AKA memecpy,
   AKA Recovery A La Mode, is a coldboot bootROM exploit. The short version of
   this exploit is that the USB parser feeds a user-controlled length to a
   memcpy. By making that length very big, we can override the application stack.
@@ -64,13 +64,13 @@ Libtransistor saw a number of improvement thanks to the epic work of @misson2000
   - Mutexes: [See commit](https://github.com/reswitched/libtransistor/commit/5ee8dcc540beb87dd887eaf5af188202c99b509a)
   - And some work was done to ensure the thread safety of the existing components.
 
-## What happened: Atmosphere Custom Firmware
+## What happened: Atmosphère Custom Firmware
 
 Custom firmware is advancing at sonic speed. Let's go over what is planned:
 
-- Fusee as a bootloader, with emunand creation menu
-- Exosphere as TrustZone reimplementation, with CFW SMC GetInfo extensions.
-- Thermosphere providing emunand via EL2
+- Fusèe as a bootloader, with emunand creation menu
+- Exosphère as TrustZone reimplementation, with CFW SMC GetInfo extensions.
+- Thermosphère providing emunand via EL2
 - Re-implementations and extensions of the Loader, sm, and boot system modules.
   - Loader: Extend to prefer "sdmc:/\<atmosphere dir\>/titles/title\_id/..."
     over "code:/..." when reading ExeFS, providing easy modification of any
@@ -83,6 +83,15 @@ Custom firmware is advancing at sonic speed. Let's go over what is planned:
 
 Current focus seems to have been on Loader - with SM and `exosphere` already
 being fully functional replacements of their stock counterparts.
+
+## What happened: Switch Linux
+
+Along with the release of shofel2 (FailOverflow's version of the Tegra bootrom exploit), Fail0verflow also posted a blog post 
+describing their work getting linux running on the Switch. They also made public all of their repositories for their Switch Linux 
+boot chain. So with a bit of work anyone can now build and run linux on their Switch.
+
+There are still a lot of rough edges and things that don't work yet, but quite a few people have been able to successfully get it 
+up and running. Check it out over on the [Fail0verflow Blog](https://fail0verflow.com/blog/2018/shofel2/).
 
 ## What people are working on
 
