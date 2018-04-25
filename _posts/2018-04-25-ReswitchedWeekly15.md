@@ -37,7 +37,7 @@ over them, what they allow and why they're important:
   vulnerability, we can simply call `SetProgramNcaPath` to set the title's
   executable to our malicious NSP file.
 
-- Fusèe-Gelèe, AKA shofel2, AKA Fuzzy Jellies, AKA Fussy Julie, AKA memecpy,
+- Fusée-Gelée, AKA shofel2, AKA Fuzzy Jellies, AKA Fussy Julie, AKA memecpy,
   AKA Recovery A La Mode, is a coldboot bootROM exploit. The short version of
   this exploit is that the USB parser feeds a user-controlled length to a
   memcpy. By making that length very big, we can override the application stack.
@@ -68,7 +68,7 @@ Libtransistor saw a number of improvement thanks to the epic work of @misson2000
 
 Custom firmware is advancing at sonic speed. Let's go over what is planned:
 
-- Fusèe as a bootloader, with emunand creation menu
+- Fusée as a bootloader, with emunand creation menu
 - Exosphère as TrustZone reimplementation, with CFW SMC GetInfo extensions.
 - Thermosphère providing emunand via EL2
 - Re-implementations and extensions of the Loader, sm, and boot system modules.
@@ -100,7 +100,7 @@ up and running. Check it out over on the [Fail0verflow Blog](https://fail0verflo
   stdio and crash reporting.
 - @misson20000 also got a toy dynamic loader into libtransistor, paving the way
   for dynamic cores in RetroArch and traNVparency improvements. [See PR](https://github.com/reswitched/libtransistor/pull/143)
-- @ktemkin is working on the SDMMC driver for Atmosphere's Fusee. [See here](https://github.com/Atmosphere-NX/Atmosphere/blob/alt_sdmmc/fusee/fusee-primary/src/sdmmc.c)
+- @ktemkin is working on the SDMMC driver for Atmosphere's Fusée. [See here](https://github.com/Atmosphere-NX/Atmosphere/blob/alt_sdmmc/fusee/fusee-primary/src/sdmmc.c)
 - @SciresM is working on the custom Loader implementation.
 
 ## Call for participation
@@ -109,8 +109,8 @@ Reswitched is always looking for people to work on the various projects. If you
 want to give a helping hand, hop on the [Discord] so we can coordinate the work!
 
 If you want to work on Atmosphère, feel free to send a DM to @SciresM on
-Discord. People can easily work on Fusee (getting the SDMMC driver to work, for
-instance) by using Fusee-Gelee, or work on custom sysmodules, starting them with
+Discord. People can easily work on Fusée (getting the SDMMC driver to work, for
+instance) by using Fusée-Gelée, or work on custom sysmodules, starting them with
 nspwn.
 
 In the libtransistor department, a lot of things could be implemented without
