@@ -46,7 +46,7 @@ You must use clang version 5, libtransistor will not work with any earlier versi
 To start with, you'll need to install a collection of base development tools,
 along with llvm5/clang5, python3 and cmake.
 
-- For MacOS, run `brew install python3 cmake llvm`.
+- For MacOS, run `brew install python cmake llvm squashfs`.
 
   For compatibility reasons, llvm is installed under `/usr/local/opt/llvm` to
   avoid conflicting with the rest of the system. You should add that to your PATH :
