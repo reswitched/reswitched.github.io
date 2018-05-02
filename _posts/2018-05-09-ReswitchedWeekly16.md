@@ -55,9 +55,9 @@ nspwn or hekate's KIP injection.
 In the libtransistor department, a lot of things could be implemented without
 much requirements beyond "knowing C". Below are a list of issues, of varying
 difficulty, that we feel the community could help on. If you're interested in
-working on those, but need some help, feel free to reach out to @roblabla on
-Discord. I'll be glad to write some mentoring notes on what needs to be done,
-and to guide you through the process.
+working on those, but need some help, feel free to reach out to @roblabla or
+@misson20000 on Discord. We'll be glad to write some mentoring notes on what
+needs to be done, and to guide you through the process.
 
 - Documentation work!
   - Enhancing the libtransistor docs. You can take a look at
