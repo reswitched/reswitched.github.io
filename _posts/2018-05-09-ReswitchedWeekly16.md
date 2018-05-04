@@ -12,28 +12,30 @@ the Nintendo Switch.
 
 ## What Happened: Some general tools
 
-- Fusee Gelee got all kindsd of implementations. You can now hack your switch 
+- Fusée-Gelée got all kindsd of implementations. You can now hack your switch 
   [from Android](https://github.com/DavidBuchanan314/NXLoader),
   [from Windows](https://github.com/rajkosto/TegraRcmSmash),
   and even [from your web browser](https://github.com/atlas44/web-fusee-launcher).
   How scary is that?
 
-- @rajtosko was on a roll: he relased [biskeydump](https://github.com/rajkosto/biskeydump) and [HacDiskMount](),
-  allowing people to mount their NAND partitions from the comfort of their
+- @rajkosto was on a roll: he relased [biskeydump](https://github.com/rajkosto/biskeydump) and [HacDiskMount](),
+  allowing people to mount their NAND partitions from the comfort of their Windows
   computers.
 
 - @nwert released [Hekate-IPL](https://github.com/nwert/hekate), a bootloader
   that can load custom Kernels, trustzones, and inject KIP1s. You can imagine
   how useful that is ;).
+  
+- @SciresM added some new [Switch Tools](https://github.com/switchbrew/switch-tools) for converting ELF files to KIP1 as well as an [NPDM](http://switchbrew.org/index.php?title=NPDM) generator to build NPDM files from JSON.
 
 ## What Happened: The Libtransistor Toolchain
 
 **TODO: Twili stuff I guess?**
 
-## What Happened: Atmosphere Custom Firmware
+## What Happened: Atmosphère Custom Firmware
 
-- sdMMC support is going smoothly thanks to @ktemkin's perseverance. See
-  [the alt_sdmmc branch](https://github.com/Atmosphere-NX/Atmosphere/tree/alt_sdmmc)
+- sdMMC support is going smoothly thanks to @ktemkin's perseverance and it has now 
+  made its way in to the main branch of [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/)
 - Loader is fully re-implemented and works on hardware. [Check it out](https://github.com/Atmosphere-NX/Atmosphere/tree/master/stratosphere/loader)
 
 ## What Happened: Switch Linux
