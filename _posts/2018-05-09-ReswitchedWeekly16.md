@@ -12,7 +12,7 @@ the Nintendo Switch.
 
 ## What Happened: Some general tools
 
-- Fusée-Gelée got all kindsd of implementations. You can now hack your switch 
+- Fusée-Gelée got all kinds of implementations. You can now hack your switch 
   [from Android](https://github.com/DavidBuchanan314/NXLoader),
   [from Windows](https://github.com/rajkosto/TegraRcmSmash),
   and even [from your web browser](https://github.com/atlas44/web-fusee-launcher).
@@ -30,13 +30,43 @@ the Nintendo Switch.
 
 ## What Happened: The Libtransistor Toolchain
 
-**TODO: Twili stuff I guess?**
+@misson20000 has been hard at work on Twili, a new, cleaner homebrew loader.
+(Small interject: a homebrew loader and homebrew menu are totally different things).
+It features:
+
+- Loading NROs into clean-slate processes over USB
+- Creating core dumps when they crash, which can be loaded into LLDB (requires a
+  patch). GDB support is planned.
+- Set custom resource limits on those processes (default memory limit is ~6MiB
+  heap)
+- Homebrew ABI shim that also gets loaded into the process. The HBABI shim gets
+  loader config from Twili over IPC, ensuring HBABI compatibility.
+
+This brought some libtransistor changes along to make sure everything worked:
+
+- Removed `ace_loader`, as it is now obsolete
+- Added waiters, for event-handling loops, with planned support for "signals"
+  that don't depend on kernel event handles but can be signaled from other threads.
+  It features a really cool C++ api to which you can pass lambda functions and
+  the call to register an event returns a "WaitHandle" that will unregister when
+  it gets destructed.
+- Changed ipc server to use these waiters
+- added template libraries for ipc client/server. See twili/IHBABIShim.cpp and
+  twili/hbabi_shim.cpp for usage examples
+- Removed `alloc_pages` since it's also obsolete
+- added `runtime_config`, which are some weak symbols an application can use to
+  override stdout/heap
+- lots more C++ bindings
+- changed C++ namespaces to be all lowercase and start with "trn" instead of
+  "Transistor".
 
 ## What Happened: Atmosphère Custom Firmware
 
 - sdMMC support is going smoothly thanks to @ktemkin's perseverance and it has now 
   made its way in to the main branch of [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/)
-- Loader is fully re-implemented and works on hardware. [Check it out](https://github.com/Atmosphere-NX/Atmosphere/tree/master/stratosphere/loader)
+- @SciresM has finished fully reimplementing Loader. It requires more work to make it compatible with 2.x+ firmwares. [Check it out](https://github.com/Atmosphere-NX/Atmosphere/tree/master/stratosphere/loader)
+- @SciresM is progressing on the PM reimplementation. [Check it out](https://github.com/Atmosphere-NX/Atmosphere/master/stratosphere/pm)
+- 
 
 ## What Happened: Switch Linux
 **TODO: Hopefully someone knows?**
