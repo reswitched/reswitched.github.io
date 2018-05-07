@@ -26,7 +26,12 @@ the Nintendo Switch.
   that can load custom Kernels, trustzones, and inject KIP1s. You can imagine
   how useful that is ;).
   
-- @SciresM added some new [Switch Tools](https://github.com/switchbrew/switch-tools) for converting ELF files to KIP1 as well as an [NPDM](http://switchbrew.org/index.php?title=NPDM) generator to build NPDM files from JSON.
+- @SciresM added some new [Switch Tools](https://github.com/switchbrew/switch-tools)
+  for converting ELF files to KIP1 as well as an [NPDM](http://switchbrew.org/index.php?title=NPDM)
+  generator to build NPDM files from JSON.
+
+  In the same vein, he also made hactool able to transform an NPDM into JSON.
+  [Lookie here](https://github.com/SciresM/hactool/commit/fa2730ef598a2eb04ab7cbde6dcb957d0bcf1315).
 
 ## What Happened: The Libtransistor Toolchain
 
