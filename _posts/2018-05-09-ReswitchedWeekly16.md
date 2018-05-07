@@ -71,10 +71,22 @@ This brought some libtransistor changes along to make sure everything worked:
   made its way in to the main branch of [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/)
 - @SciresM has finished fully reimplementing Loader. It requires more work to make it compatible with 2.x+ firmwares. [Check it out](https://github.com/Atmosphere-NX/Atmosphere/tree/master/stratosphere/loader)
 - @SciresM is progressing on the PM reimplementation. [Check it out](https://github.com/Atmosphere-NX/Atmosphere/master/stratosphere/pm)
-- 
 
 ## What Happened: Switch Linux
-**TODO: Hopefully someone knows?**
+
+Few things happened on the Switch Linux side. We're going to stay fairly
+high-level: here's a taste of what's working, and what needs more work
+(contributors welcome!):
+
+- Display works correctly (some rootfs's need to manually rotate it)
+  - Gnome has brightness support
+- eMMC is accessible and can be dumped through dd or things like @daanhenke's [httpnand](https://github.com/daanhenke/httpnand)
+- Bluetooth works (although it can be unstable)
+- A linux joycon driver can be used to use bluetooth joycons as an input device
+  - They do not work connected to console physically though. Contributors, take arm!
+- Audio does not work
+- USB does not work at all and charging is questionable (voltages may be wrong)
+- Battery calibration is buggy for a lot of people.
 
 ## What Happened: RyujiNX Emulator
 **TODO: Hopefully someone knows?**
