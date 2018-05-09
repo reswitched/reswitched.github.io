@@ -122,8 +122,8 @@ needs to be done, and to guide you through the process.
   - SwIPC documentation. We need to make it *easy* for people to know what each
     function and service does.
 - JIT API! We can call svcMapProcessCodeMemory, meaning we can
-  JIT. We should make sure we have a proper API for this. Mimicking mprotect
-  would probably be the best past, to be compatible with existing code.
+  JIT. See [here](https://github.com/reswitched/libtransistor/issues/119) if
+  you'd like to pick this up.
 - Joystick support in SDL2! If you want to pick this up, look at [this issue](https://github.com/reswitched/sdl-libtransistor/issues/1).
 - Thread Local Storage. Check [this issue](https://github.com/reswitched/libtransistor/issues/91).
 - Implementing more services into libtransistor. We're lacking a bunch of things
