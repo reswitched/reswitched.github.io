@@ -76,8 +76,8 @@ This brought some libtransistor changes along to make sure everything worked:
 
 ## What Happened: Atmosphère Custom Firmware
 
-- sdMMC support is going smoothly thanks to @ktemkin and @TuxSH's perseverance and it has now 
-  made its way in to the main branch of [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/).
+- sdMMC support is going smoothly thanks to @ktemkin's perseverance and it has
+  now made its way in to the main branch of [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/).
   Improvements still need to be made to make it go faster.
 - @SciresM has finished fully reimplementing Loader. It requires more work to
   make it compatible with 2.x+ firmwares. [Check it out](https://github.com/Atmosphere-NX/Atmosphere/tree/master/stratosphere/loader)
