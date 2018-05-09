@@ -8,7 +8,7 @@ Hello and welcome to Reswitched Weekly, a bi-weekly summary of the progress
 made by the reswitched team and wider community around homebrew development for
 the Nintendo Switch.
 
-**TODO: Small blurb**
+
 
 ## What Happened: Some general tools
 
@@ -18,20 +18,29 @@ the Nintendo Switch.
   and even [from your web browser](https://github.com/atlas44/web-fusee-launcher).
   How scary is that?
 
-- @rajkosto was on a roll: he relased [biskeydump](https://github.com/rajkosto/biskeydump) and [HacDiskMount](),
+- @rajkosto was on a roll: he relased [biskeydump](https://github.com/rajkosto/biskeydump)
+  and [HacDiskMount](https://switchtools.sshnuke.net/),
   allowing people to mount their NAND partitions from the comfort of their Windows
   computers.
 
+  @ihaveamac is working on a cross-platform, open source alternative to
+  HacDiskMount called [switchfs](https://github.com/ihaveamac/switchfs).
+
 - @nwert released [Hekate-IPL](https://github.com/nwert/hekate), a bootloader
-  that can load custom Kernels, trustzones, and inject KIP1s. You can imagine
-  how useful that is ;).
-  
+  that can load custom Kernels, trustzones, and inject KIP1s. Works on
+  1.0.0-3.0.0. @Jan4V has [a fork](https://github.com/Jan4V/hekate-ipl-50x) that
+  works on 5.x. Fellow developers: You may now have fun patching the kernel,
+  adding sysmodules, and other cool stuff!
+
 - @SciresM added some new [Switch Tools](https://github.com/switchbrew/switch-tools)
   for converting ELF files to KIP1 as well as an [NPDM](http://switchbrew.org/index.php?title=NPDM)
   generator to build NPDM files from JSON.
 
   In the same vein, he also made hactool able to transform an NPDM into JSON.
   [Lookie here](https://github.com/SciresM/hactool/commit/fa2730ef598a2eb04ab7cbde6dcb957d0bcf1315).
+
+- @BernardoGiordano released [Checkpoint](https://github.com/BernardoGiordano/Checkpoint)
+  for the switch. Now we can all have fun and mod saves.
 
 ## What Happened: The Libtransistor Toolchain
 
@@ -67,9 +76,11 @@ This brought some libtransistor changes along to make sure everything worked:
 
 ## What Happened: Atmosphère Custom Firmware
 
-- sdMMC support is going smoothly thanks to @ktemkin's perseverance and it has now 
-  made its way in to the main branch of [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/)
-- @SciresM has finished fully reimplementing Loader. It requires more work to make it compatible with 2.x+ firmwares. [Check it out](https://github.com/Atmosphere-NX/Atmosphere/tree/master/stratosphere/loader)
+- sdMMC support is going smoothly thanks to @ktemkin and @TuxSH's perseverance and it has now 
+  made its way in to the main branch of [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/).
+  Improvements still need to be made to make it go faster.
+- @SciresM has finished fully reimplementing Loader. It requires more work to
+  make it compatible with 2.x+ firmwares. [Check it out](https://github.com/Atmosphere-NX/Atmosphere/tree/master/stratosphere/loader)
 - @SciresM is progressing on the PM reimplementation. [Check it out](https://github.com/Atmosphere-NX/Atmosphere/master/stratosphere/pm)
 
 ## What Happened: Switch Linux
@@ -87,9 +98,6 @@ high-level: here's a taste of what's working, and what needs more work
 - Audio does not work
 - USB does not work at all and charging is questionable (voltages may be wrong)
 - Battery calibration is buggy for a lot of people.
-
-## What Happened: RyujiNX Emulator
-**TODO: Hopefully someone knows?**
 
 ## Call for participation
 
@@ -128,5 +136,5 @@ needs to be done, and to guide you through the process.
 If you're working on anything fun, please post on [next week's issue] on GitHub.
 This way, I can include your stuff in here :D.
 
-[next week's issue]: TODO
+[next week's issue]: https://github.com/ReswitchedWeekly/ReswitchedWeekly.github.io/issues/37
 [Discord]: https://discordapp.com/invite/DThbZ7z
