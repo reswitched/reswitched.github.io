@@ -44,7 +44,7 @@ the Nintendo Switch.
 
 ## What Happened: The Libtransistor Toolchain
 
-@misson20000 has been hard at work on Twili, a new, cleaner homebrew loader.
+@misson20000 has been hard at work on Twili, a new, cleaner, homebrew loader.
 (Small interject: a homebrew loader and homebrew menu are totally different things).
 It features:
 
