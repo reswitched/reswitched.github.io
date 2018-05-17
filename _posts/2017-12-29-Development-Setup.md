@@ -108,11 +108,19 @@ libtransistor.
 
 ```
 git clone --recursive https://github.com/reswitched/libtransistor
-cd libtransistor
+
+git clone --recursive https://github.com/reswitched/libtransistor-base
+cd libtransistor-base
 # Install the python dependencies. On Arch Linux
 pip install -r requirements.txt
 # On everything else
 pip3 install -r requirements.txt
+# Build libtransistor. For MacOS and Arch Linux
+make
+# For Ubuntu/Debian
+make LLVM_POSTFIX=-5.0
+mv dist/ ../libtransistor/
+cd ../libtransistor
 # Build libtransistor. For MacOS and Arch Linux
 make
 # For Ubuntu/Debian
@@ -133,7 +141,7 @@ To start them, connect your switch to pegaswitch, and type
 switch, it should run !
 
 You should probably set the `LIBTRANSISTOR_HOME` environment variable to your
-`libtransistor` folder, as this is how `make` will find where libtransistor is.
+`libtransistor/dist` folder, as this is how `make` will find where libtransistor is.
 You can do that by writing `export LIBTRANSISTOR_HOME=/path/to/libtransistor/dist` in
 your shell's RC file (`~/.bashrc` for instance).
 
@@ -149,4 +157,4 @@ But most importantly, you can help us build awesome stuff for the Switch. If you
 are willing to give us a helping hand, don't hesitate to join our
 [Discord](https://discordapp.com/invite/DThbZ7z).
 
-### Last Updated: 2018/04/09
+### Last Updated: 2018/05/16
