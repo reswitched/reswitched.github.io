@@ -119,7 +119,7 @@ pip3 install -r requirements.txt
 make
 # For Ubuntu/Debian
 make LLVM_POSTFIX=-5.0
-mv dist/ ../libtransistor/
+cp -r dist ../libtransistor/
 cd ../libtransistor
 # Build libtransistor. For MacOS and Arch Linux
 make
@@ -157,4 +157,4 @@ But most importantly, you can help us build awesome stuff for the Switch. If you
 are willing to give us a helping hand, don't hesitate to join our
 [Discord](https://discordapp.com/invite/DThbZ7z).
 
-### Last Updated: 2018/05/16
+### Last Updated: 2018/05/17
