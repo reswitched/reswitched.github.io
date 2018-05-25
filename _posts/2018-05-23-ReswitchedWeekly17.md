@@ -38,7 +38,7 @@ the Nintendo Switch.
 
 ## What Happened: Atmosphère Custom Firmware
 
-- @ktemkin have been hard at work to get sdMMC drivers out there, and making
+- @ktemkin has been hard at work to get sdMMC drivers out there, and making
   sure they go *fast*.
 - @TuxSH worked on various part of the boot process.
 - @SciresM Fixed various exosphere bugs, and implemented BIS cryptography,
