@@ -23,7 +23,11 @@ the Nintendo Switch.
 
 ## What Happened: Libtransistor Toolchain
 
-**TODO: Anything?**
+- @misson20000 made libtransistor compatible with 5.x consoles. Note that there
+  is still a bug haunting the 4.x version. [PR here](https://github.com/reswitched/libtransistor/pull/151)
+- @kgsws Finalized the am-layer mode, making libtransistor graphics work
+  correctly with the rest of the Horizon ecosystem. [PR here](https://github.com/reswitched/libtransistor/pull/148)
+- @awernick implemented the SDL2 Joystick API. [PR here](https://github.com/reswitched/sdl-libtransistor/pull/3)
 
 ## What Happened: MegatonHammer Toolchain
 
@@ -35,14 +39,17 @@ the Nintendo Switch.
 
 ## What Happened: Atmosphère Custom Firmware
 
-**TODO: Anything?**
+- @ktemkin have been hard at work to get sdMMC drivers out there, and making
+  sure they go *fast*.
+- @TuxSH worked on various part of the boot process.
+- @SciresM Fixed various exosphere bugs, and implemented BIS cryptography,
+  allowing to read the switch filesystems.
 
 ## What Happened: Switch Linux
 
 - Audio drivers were added! [See this commit](https://github.com/tardyp/switch-linux/commit/9ab9a019fdf1275f1dd6b911bd7f37cb49738cbe)
 - @shinyquagsire23 got joycons to work (docked) in switch linux. The patches can
   be found [here](https://github.com/shinyquagsire23/Switch-Linux/commit/1580857997fb6d77f2f9b63f23d95ad68f420210).
-
 
 ## Call for participation
 
@@ -69,7 +76,6 @@ needs to be done, and to guide you through the process.
 - JIT API! We can call svcMapProcessCodeMemory, meaning we can
   JIT. See [here](https://github.com/reswitched/libtransistor/issues/119) if
   you'd like to pick this up.
-- Joystick support in SDL2! If you want to pick this up, look at [this issue](https://github.com/reswitched/sdl-libtransistor/issues/1).
 - Thread Local Storage. Check [this issue](https://github.com/reswitched/libtransistor/issues/91).
 - Implementing more services into libtransistor. We're lacking a bunch of things
   like NFC support and whatnot.
@@ -81,6 +87,5 @@ needs to be done, and to guide you through the process.
 If you're working on anything fun, please post on [next week's issue] on GitHub.
 This way, I can include your stuff in here :D.
 
-[next week's issue]: TODO
+[next week's issue]: https://github.com/ReswitchedWeekly/ReswitchedWeekly.github.io/issues/38
 [Discord]: https://discordapp.com/invite/DThbZ7z
-
