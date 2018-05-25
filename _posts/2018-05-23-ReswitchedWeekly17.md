@@ -15,9 +15,9 @@ the Nintendo Switch.
 - @fincs fixed nx-hbloader so that it can now be used alongside games. Note that
   this change limits the size of the heap to 500MB.
   [Relevant commit](https://github.com/switchbrew/nx-hbloader/commit/d6e56d487f4624237407c395b93d53bfa6e44cf6)
-- @TurtleP has released the first version of Löve Potion [here](https://github.com/TurtleP/LovePotion/releases/tag/switch-1.0.0)
+- @TurtleP has released the first version of Löve Potion [here](https://github.com/TurtleP/LovePotion/releases/tag/switch-1.0.1)
     - Löve Potion is a port of the [LÖVE framework](https://love2d.org)
-    - Currently it only works in firmwares <= 4.1.0
+    - Works on all firmwares
     - The rendering portion was rewritten to use SDL, giving a huge performance boost
 
 ## What Happened: Libtransistor Toolchain
