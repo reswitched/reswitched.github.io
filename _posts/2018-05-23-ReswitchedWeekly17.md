@@ -15,7 +15,6 @@ the Nintendo Switch.
 - @fincs fixed nx-hbloader so that it can now be used alongside games. Note that
   this change limits the size of the heap to 500MB.
   [Relevant commit](https://github.com/switchbrew/nx-hbloader/commit/d6e56d487f4624237407c395b93d53bfa6e44cf6)
-- @roblabla is working on GDB integration in twili. **TODO: PR here**
 - @TurtleP has released the first version of Löve Potion [here](https://github.com/TurtleP/LovePotion/releases/tag/switch-1.0.0)
     - Löve Potion is a port of the [LÖVE framework](https://love2d.org)
     - Currently it only works in firmwares <= 4.1.0
