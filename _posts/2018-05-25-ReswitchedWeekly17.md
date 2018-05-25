@@ -19,6 +19,9 @@ the Nintendo Switch.
     - Löve Potion is a port of the [LÖVE framework](https://love2d.org)
     - Works on all firmwares
     - The rendering portion was rewritten to use SDL, giving a huge performance boost
+- @Qyriad added Windows support to Fusee-Launcher, and @myfreeweb added FreeBSD support!
+  See [the Windows commit](https://github.com/reswitched/fusee-launcher/commit/62ff4dba45d47990a6d7b96fac5dbb8d6337eabc)
+  or the [FreeBSD PR](https://github.com/reswitched/fusee-launcher/pull/17)
 
 ## What Happened: Libtransistor Toolchain
 
