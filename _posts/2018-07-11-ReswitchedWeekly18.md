@@ -82,5 +82,5 @@ needs to be done, and to guide you through the process.
 If you're working on anything fun, please post on [next week's issue] on GitHub.
 This way, I can include your stuff in here :D.
 
-[next week's issue]: https://github.com/ReswitchedWeekly/ReswitchedWeekly.github.io/issues/
+[next week's issue]: https://github.com/ReswitchedWeekly/ReswitchedWeekly.github.io/issues/39
 [Discord]: https://discordapp.com/invite/DThbZ7z
