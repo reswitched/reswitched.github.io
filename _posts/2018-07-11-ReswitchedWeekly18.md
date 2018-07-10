@@ -6,7 +6,7 @@ category: reswitchedweekly
 
 Hello and welcome to Reswitched Weekly, a bi-weekly summary of the progress
 made by the reswitched team and wider community around homebrew development for
-the Nintendo Switch.
+the Nintendo Switch. This post is about a month late, but the future ones will be on time again.
 
 ## What Happened: Some general tools
 
