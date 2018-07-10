@@ -12,6 +12,11 @@ the Nintendo Switch.
 
 - @desowin did some work on SDMMC drivers
 - @neobrain cleaned up the code a little and modernized C++ usage
+- @StevenMattera added touch input support to Homebrew Menu
+- @Adubbz made [Gag Order](https://github.com/Adubbz/Gag-Order), an easy way to remove supernag
+- [@perillamint](https://gitlab.com/perillamint) created [nx-fwextract](https://gitlab.com/perillamint/nx-fwextract)
+  to use original firmware for bluetooth and wifi under linux
+- A new hardmod has appeared! It's apparently possible to fit an Adafruit Trinket M0 inside of the switch.
 
 ## What Happened: Libtransistor Toolchain
 
@@ -77,5 +82,5 @@ needs to be done, and to guide you through the process.
 If you're working on anything fun, please post on [next week's issue] on GitHub.
 This way, I can include your stuff in here :D.
 
-[next week's issue]: https://github.com/ReswitchedWeekly/ReswitchedWeekly.github.io/issues/38
+[next week's issue]: https://github.com/ReswitchedWeekly/ReswitchedWeekly.github.io/issues/
 [Discord]: https://discordapp.com/invite/DThbZ7z
