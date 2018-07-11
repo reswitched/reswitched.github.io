@@ -6,12 +6,19 @@ category: reswitchedweekly
 
 Hello and welcome to Reswitched Weekly, a bi-weekly summary of the progress
 made by the reswitched team and wider community around homebrew development for
-the Nintendo Switch. This post is about a month late, but the future ones will be on time again.
+the Nintendo Switch.
+
+Due to my excessive procrastination, this update is brought to you by @Gerd2002.
+Maybe I should rename this blog to Reswitched Whenever. Or Reswitched
+Spontaneously.
+
+Anyways, during that month, the community made a huuuge progress on many fields.
+We'll probably be missing things here, so we'll try to keep it to the major
+events.
 
 ## What Happened: Some general tools
 
 - @desowin did some work on SDMMC drivers
-- @neobrain cleaned up the code a little and modernized C++ usage
 - @StevenMattera added touch input support to Homebrew Menu
 - @Adubbz made [Gag Order](https://github.com/Adubbz/Gag-Order), an easy way to remove supernag
 - [@perillamint](https://gitlab.com/perillamint) created [nx-fwextract](https://gitlab.com/perillamint/nx-fwextract)
@@ -27,19 +34,27 @@ the Nintendo Switch. This post is about a month late, but the future ones will b
 ## What Happened: MegatonHammer Toolchain
 
 - @roblabla resumed work, after a short break. (Some people say it was a revival)
+- megaton-ipc has been merged into the megaton-hammer crate, in the ipcdefs module.
+- Low-level IPC handling got a few bugfixes.
+- Twili support has been added, giving us the possibility to redirect stdout to
+  USB.
 
 ## What Happened: Hekate Bootloader
 
 - @CTCaer is now maintaining Hekate. All the following updates were implemented by him
 - Backup/Restore NAND
 - Autoboot
-- Fixed Sleep mode on some firmwares
+- Fixed Sleep mode on 3.x series firmware.
 
 ## What Happened: Atmosphère Custom Firmware
 
+- @neobrain cleaned up the code a little and modernized C++ usage
 - @SciresM added LayeredFS support to Atmospère, allowing to override game files from SD card.
   It's not ready for general use yet, and there is a high danger of getting your console banned
-  from online functionality if you do use it
+  from online functionality if you do use it.
+- In order to support the above feature, Fusee grew support for Kernel Patches.
+- @SciresM added a creport reimplementation, which writes crash reports to the
+  SDCard instead of sending them to Nintendo.
 
 ## What Happened: Switch Linux
 
