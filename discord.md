@@ -4,7 +4,7 @@ title: Discord
 permalink: /discord/
 ---
 
-ReSwitched maintains a public Discord server with numerous channels for news, information, user questions, etc.
+ReSwitched maintains a public Discord server with numerous channels for news, information, user questions, etc. [Click here to join.](https://discord.gg/ZdqEhed)
 
 # Member Roles Breakdown
 
