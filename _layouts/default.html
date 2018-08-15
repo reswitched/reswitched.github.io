@@ -27,8 +27,9 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/about">About Us</a>
+            <a href="{{ site.baseurl }}/blog">Blog</a>
+            {% if site.footer-links.discord %}<a href="https://discordapp.com/invite/{{ site.footer-links.discord }}">Discord</a>{% endif %}
           </nav>
         </header>
       </div>
