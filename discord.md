@@ -6,7 +6,7 @@ permalink: /discord/
 
 ReSwitched maintains a public Discord server with numerous channels for news, information, user questions, etc. [Click here to join.](https://discord.gg/ZdqEhed)
 
-# Member Roles Breakdown
+## Member Roles Breakdown
 
 1. **participant**: Given to members who pass the #newcomers probation; has read-write access to channels under the General category and read access to channels under the Community and Hacking/Development categories.
 1. **community**: Long-term members with little to no history of needing to be moderated are given this role. All the privileges of **participant** plus write access to channels under the Community category.
@@ -18,16 +18,16 @@ ReSwitched maintains a public Discord server with numerous channels for news, in
 1. **admin**: A role given to server administrators; full privileges to the entire server besides some privileges Discord provides only to the server owner. 
 1. **wizards**: The old **admin** role, now cosmetic.
 
-# Channel Breakdown
+## Channel Breakdown
 
-## Server
+### Server
 
 General server-specific channels
 
 1. **#newcomers**: A probationary channel for all new users to obtain an understanding of the server rules before participating. Hidden after receiving the **participant** role.
 1. **#news**: A channel where all major announcements and news from the ReSwitched team is posted.
 
-## General
+### General
 
 Channels for users with the **participant** role.
 
@@ -36,7 +36,7 @@ Channels for users with the **participant** role.
 1. **#tool-support**: An assistance channel for helping users with ReSwitched tools/projects such as [PegaSwitch](https://github.com/reswitched/pegaswitch), [libtransistor](https://github.com/reswitched/libtransistor), etc.
 1. **#hack-n-all**: A channel for the discussion of non-Switch related hacking.
 
-## Community
+### Community
 
 Channels for users with the **community** role. Read-only without the **community** role.
 
@@ -46,7 +46,7 @@ Channels for users with the **community** role. Read-only without the **communit
 1. **#creative-content**: A channel for art/creative topics, inspired by the fun users had while designing [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere)'s custom boot splash in the now-archived **#temp-atmosphere-logo**.
 1. **#off-topic**: A channel for off-topic discussion.
 
-## Hacking/Development
+### Hacking/Development
 
 Channels where active Switch-specific exploitation and development take place. Read-only without the **hacker** role.
 
@@ -54,13 +54,13 @@ Channels where active Switch-specific exploitation and development take place. R
 1. **#cfw-development**: A channel for discussion of custom firmware development, and development of custom firmware bikeshed discussions.
 1. **#commits**: A channel that lists new commits to ReSwitched projects (that have the Discord webhook enabled). Read-only.
 
-## Meta
+### Meta
 
 Channels for server-related matters and other misc information.
 
 1. **#versionlist-updates**: A channel for [HacVersionListBot](https://github.com/reswitched/HacVersionListBot) to post versionlist updates. Read-only.
 
-## Public Archive
+### Public Archive
 
 Channels that no longer serve a purpose. Read-only.
 
@@ -69,7 +69,7 @@ Channels that no longer serve a purpose. Read-only.
 1. **#temp-atmosphere-logo**: A channel for working on and deciding [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere)'s custom boot splash. Archived after a logo was decided on.
 1. **#exchange**: A channel for finding and exchanging certain-firmware Switches. Archived after the release of the firmware-independent exploit [fusée-gelée/[shofel2](https://github.com/fail0verflow/shofel2), which resulted in this channel becoming #off-topic2.
 
-# Rules
+## Rules
 
 Our Discord maintains a set of rules and guidelines that users are expected to follow. Not following these rules may result in moderator action.
 

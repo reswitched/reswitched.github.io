@@ -6,7 +6,7 @@ layout: default
 
 ReSwitched is a team seeking to fully document the Nintendo Switch's hardware and software, as well as enable users to run their homebrew on their own Switches. Got any more questions about ReSwitched? See our <a href="{{ site.baseurl }}/faq">FAQ</a> or <a href="{{ site.baseurl }}/discord">Discord</a>.
 
-# Project List
+## Projects
 
 - [ace_loader](https://github.com/reswitched/ace_loader) - NRO loader for the Switch, now deprecated and archived
 - [CagetheUnicorn](https://github.com/reswitched/CageTheUnicorn) - Debugging emulator for the Switch, now replaced by [Mephisto](https://github.com/reswitched/Mephisto)
@@ -18,7 +18,7 @@ ReSwitched is a team seeking to fully document the Nintendo Switch's hardware an
 - [SwIPC](https://github.com/reswitched/SwIPC) - IPC interface specifications and other useful info
 - [switch-oss](https://github.com/reswitched/switch-oss) - Copy of Nintendo's published open source software archive for the Switch
 
-# Friends List
+## Friends
 
 - [Atmosphère-NX](https://github.com/Atmosphere-NX) - A community group for [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere), a custom firmware for the Switch
 - [devkitPro](https://devkitpro.org) - Creators of the devkitA64 toolchain used by the majority of Switch homebrew projects and various other toolchains for many other devices
