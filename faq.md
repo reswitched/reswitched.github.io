@@ -4,8 +4,6 @@ title: Frequently Asked Questions
 permalink: /faq/
 ---
 
-# Frequently Asked Questions
-
 This page contains the answers to some *very* frequently asked questions. Is your question not answered here? Ask on our <a href="{{ site.baseurl }}/discord">Discord</a>!
 
 ## Will ReSwitched help me get free games?

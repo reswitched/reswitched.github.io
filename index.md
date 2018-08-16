@@ -8,7 +8,7 @@ ReSwitched is a team seeking to fully document the Nintendo Switch's hardware an
 
 # Project List
 
-- [ace_loader](https://github.com/reswitched/ace_loader) - NRO loader for the Switch, now deprecated and archived.
+- [ace_loader](https://github.com/reswitched/ace_loader) - NRO loader for the Switch, now deprecated and archived
 - [CagetheUnicorn](https://github.com/reswitched/CageTheUnicorn) - Debugging emulator for the Switch, now replaced by [Mephisto](https://github.com/reswitched/Mephisto)
 - [HacVersionListBot](https://github.com/reswitched/HacVersionListBot) - Discord bot to track versionlist updates
 - [libtransistor](https://github.com/reswitched/libtransistor) - Toolchain for Switch homebrew development
