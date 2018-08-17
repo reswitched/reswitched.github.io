@@ -92,3 +92,9 @@ Our Discord maintains a set of rules and guidelines that users are expected to f
 1. Don't brigade, raid, or otherwise attack other people or communities. Don't discuss participation in these attacks. This may warrant an immediate permanent ban.
 
 1. Off-topic content belongs in #off-topic. Keep low-quality content like memes out.
+
+1. Trying to evade, look for loopholes, or stay borderline within the rules will be treated as breaking them.
+
+1. Absolutely no piracy. There is a zero-tolerance policy and we will enforce this strictly and swiftly.
+
+1. The first character of your server nickname should be alphanumeric if you wish to talk in chat.
