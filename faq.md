@@ -45,8 +45,8 @@ Adapted from the now-defunct #vvv-faq channel on our <a href="{{ site.baseurl }}
 ### The Switch seems to have a lot of different boot modes such as RCM, safe mode, maintenance/recovery mode, etc. What do these do and how do I know if I'm in one of them?
 
 1. **RCM**: The Tegra X1's boot recovery mode.
-   1. The Switch will boot into this mode automatically if it is missing its eMMC board or has corrupted boot contents. 
-   1. This mode can be triggered manually by grounding pin 10 on the right JoyCon rail, then holding `Volume Up` + `HOME` + `POWER`. More information is available [here](https://xghostboyx.github.io/RCM-Guide).
+   1. The Switch will boot into this mode automatically if it is missing its eMMC board or has corrupted boot contents.
+   1. This mode can be triggered manually by grounding pin 10 on the right JoyCon rail, then holding `Volume Up` + `POWER`. More information is available [here](https://xghostboyx.github.io/RCM-Guide).
    1. The Switch's screen does not turn on, and if plugged into a computer will identify itself as "APX".
    1. Enables recovering a Switch or other Tegra device from a hard brick, as long as a USB connection can be made to a computer.
    1. A bootrom exploit for the Tegra X1, fusée-gelée/[shofel2](https://github.com/fail0verflow/shofel2), takes advantage of a security flaw in this mode.
