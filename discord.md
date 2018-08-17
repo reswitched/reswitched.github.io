@@ -74,20 +74,20 @@ Channels that no longer serve a purpose. Read-only.
 Our Discord maintains a set of rules and guidelines that users are expected to follow. Not following these rules may result in moderator action.
 
 1. Read all the rules before participating in chat. Not reading the rules is not an excuse for breaking them.
-   1. It's suggested that you read channel topics and pins before asking questions as well, as some questions may have already been answered in those.
+   - It's suggested that you read channel topics and pins before asking questions as well, as some questions may have already been answered in those.
 
 1. Be nice to each other. It's fine to disagree, it's not fine to insult or attack other people.
-   1. You may disagree with anyone or anything you like, but you should try to keep it to opinions, and not people. Avoid vitriol.
-   1. Constant antagonistic behavior is considered uncivil and appropriate action will be taken.
-   1. The use of derogatory slurs -- sexist, racist, homophobic, or otherwise -- is unacceptable and may be grounds for an immediate ban.
+   - You may disagree with anyone or anything you like, but you should try to keep it to opinions, and not people. Avoid vitriol.
+   - Constant antagonistic behavior is considered uncivil and appropriate action will be taken.
+   - The use of derogatory slurs -- sexist, racist, homophobic, or otherwise -- is unacceptable and may be grounds for an immediate ban.
 
 1. If you have concerns about another user, please take up your concerns with a staff member (someone with the "moderator", "hop", or "Wizard" role in the sidebar) in private. Don't publicly call other users out.
 
 1. From time to time, we may mention everyone in the server. We do this when we feel something important is going on that requires attention. Complaining about these pings may result in a ban.
-   1. To disable notifications for these pings, suppress them in "ReSwitched → Notification Settings".
+   - To disable notifications for these pings, suppress them in "ReSwitched → Notification Settings".
 
 1. Don't spam.
-   1. For excessively long text, use a service like https://0bin.net/.
+   - For excessively long text, use a service like https://0bin.net/.
 
 1. Don't brigade, raid, or otherwise attack other people or communities. Don't discuss participation in these attacks. This may warrant an immediate permanent ban.
 
