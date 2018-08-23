@@ -16,7 +16,7 @@ One of our team members, @Plailect, maintains an easy-to-use Switch hacking guid
 
 ## What firmware is best? Should I upgrade to a specific firmware?
 
-The general rule is: **Lower is better.** It is **NOT** recommended to upgrade to any higher firmware at this time. On firmware versions up to 4.1.0, we currently have means of triggering fully privileged code execution through softwarehax. Switches vulnerable to fusée-gelée/[shofel2](https://github.com/fail0verflow/shofel2) can be hacked via RCM mode regardless of firmware version. As of 2018-07-10 there are [reports of Switches not vulnerable to fusée-gelée/shofel2](https://twitter.com/SciresM/status/1016724847504736256).
+The general rule is: **Lower is better.** It is **NOT** recommended to upgrade to any higher firmware at this time. On firmware versions up to 4.1.0, we currently have means of triggering fully privileged code execution through softwarehax. Switches vulnerable to [fusée-gelée](https://github.com/Cease-and-DeSwitch/fusee-launcher)/[shofel2](https://github.com/fail0verflow/shofel2) can be hacked via RCM mode regardless of firmware version. As of 2018-07-10 there are [reports of Switches not vulnerable to fusée-gelée/shofel2](https://twitter.com/SciresM/status/1016724847504736256).
 
 ## Will ReSwitched ever release "coldboot" exploits for the Switch?
 
@@ -49,7 +49,7 @@ Adapted from the now-defunct #vvv-faq channel on our <a href="{{ site.baseurl }}
    1. This mode can be triggered manually by grounding pin 10 on the right JoyCon rail, then holding `Volume Up` + `POWER`. More information is available [here](https://xghostboyx.github.io/RCM-Guide).
    1. The Switch's screen does not turn on, and if plugged into a computer will identify itself as "APX".
    1. Enables recovering a Switch or other Tegra device from a hard brick, as long as a USB connection can be made to a computer.
-   1. A bootrom exploit for the Tegra X1, fusée-gelée/[shofel2](https://github.com/fail0verflow/shofel2), takes advantage of a security flaw in this mode.
+   1. A bootrom exploit for the Tegra X1, [fusée-gelée](https://github.com/Cease-and-DeSwitch/fusee-launcher)/[shofel2](https://github.com/fail0verflow/shofel2), takes advantage of a security flaw in this mode.
 
 1. **Safe Mode**: Available since firmware 4.0.0, this mode attempts to check for and download/install a System Update.
    1. Initiated by the key sequence: `Volume Down` + `POWER`, shift `Volume Down` to `Volume Up`, release `POWER`.
@@ -80,4 +80,4 @@ Adapted from the now-defunct #vvv-faq channel on our <a href="{{ site.baseurl }}
 
 ### Is there a way to bypass the fuses burned on major system firmware updates, allowing downgrading the Switch firmware to more vulnerable versions?
 
-The fuses in the Nintendo Switch are embedded into the SoC, and thus are not feasibly bypassable via any hardware modification. Fuse checks can be bypassed with a bootrom-level exploit like fusée-gelée/[shofel2](https://github.com/fail0verflow/shofel2), but downgrading is not particularly useful for the end user at that point since you've already achieved the most privileged level of execution possible. Additionally, if you downgrade through a method like this, you will be reliant on that method to boot until you upgrade again, since normal boot will be interrupted by the failing fuse checks; furthermore, the fuse checks will still occur at warmboot, preventing the device from waking up after sleeping.
+The fuses in the Nintendo Switch are embedded into the SoC, and thus are not feasibly bypassable via any hardware modification. Fuse checks can be bypassed with a bootrom-level exploit like [fusée-gelée](https://github.com/Cease-and-DeSwitch/fusee-launcher)/[shofel2](https://github.com/fail0verflow/shofel2), but downgrading is not particularly useful for the end user at that point since you've already achieved the most privileged level of execution possible. Additionally, if you downgrade through a method like this, you will be reliant on that method to boot until you upgrade again, since normal boot will be interrupted by the failing fuse checks; furthermore, the fuse checks will still occur at warmboot, preventing the device from waking up after sleeping.

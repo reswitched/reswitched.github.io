@@ -67,7 +67,7 @@ Channels that no longer serve a purpose. Read-only.
 1. **#34c3-text**: A discussion channel for the talks held at [34c3](https://events.ccc.de/congress/2017/wiki/index.php/Main_Page). Archived after 34c3 had ended for a signficant period of time.
 1. **#exploit-development**: A channel for active development of Switch exploits. Archived after its stated purpose spread out elsewhere, making the channel obsolete.
 1. **#temp-atmosphere-logo**: A channel for working on and deciding [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere)'s custom boot splash. Archived after a logo was decided on.
-1. **#exchange**: A channel for finding and exchanging certain-firmware Switches. Archived after the release of the firmware-independent exploit [fusée-gelée/[shofel2](https://github.com/fail0verflow/shofel2), which resulted in this channel becoming #off-topic2.
+1. **#exchange**: A channel for finding and exchanging certain-firmware Switches. Archived after the release of the firmware-independent exploit [fusée-gelée](https://github.com/Cease-and-DeSwitch/fusee-launcher)/[shofel2](https://github.com/fail0verflow/shofel2), which resulted in this channel becoming #off-topic2.
 
 ## Rules
 
