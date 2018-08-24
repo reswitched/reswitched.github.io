@@ -87,7 +87,7 @@ Our Discord maintains a set of rules and guidelines that users are expected to f
    - To disable notifications for these pings, suppress them in "ReSwitched → Notification Settings".
 
 1. Don't spam.
-   - For excessively long text, use a service like https://0bin.net/.
+   - For excessively long text, use a service like [0bin](https://0bin.net/).
 
 1. Don't brigade, raid, or otherwise attack other people or communities. Don't discuss participation in these attacks. This may warrant an immediate permanent ban.
 
