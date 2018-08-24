@@ -9,7 +9,7 @@ ReSwitched maintains a public Discord server with numerous channels for news, in
 ## Member Roles Breakdown
 
 1. **participant**: Given to members who pass the #newcomers probation; has read-write access to channels under the General category and read access to channels under the Community and Hacking/Development categories.
-1. **community**: Long-term members with little to no history of needing to be moderated are given this role. All the privileges of **participant** plus write access to channels under the Community category.
+1. **community**: Given to users who continuously contribute positively to the community and the quality of discussion. All the privileges of **participant** plus write access to channels under the Community category.
 1. **hacker**: Given to members with significant technical ability; all the privileges of **community** plus write access to the channels under the Hacking/Development category. Note that this role is only given when requested by a user; not every user without this role is without technical ability!
 1. **hop**: A "half-operator" (a term coined by some older IRC servers); a role given to members who assist with moderating the server.
 1. **mod**: A role given to members responsible for moderating the server. Usually not seen in the user list unless manually checked for, as most users with **mod** also have **team**.
