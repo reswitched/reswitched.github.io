@@ -33,7 +33,7 @@ the Nintendo Switch.
 ## What Happened: CTCAer's Hekate
 
 - Hekate v4 was released! With it, support for chainloading was added, along with "Countless fixes and bugfixes" and other new features.
-- Hekate v4.1 brough full 6.0.0 support, backlight brightness and backup cancellation.
+- Hekate v4.1 brought full 6.0.0 support, backlight brightness and backup cancellation.
 - Hekate v4.2, the latest release supports wildcard kip loading, and cancellation of the backup verification process.
 
 ## What Happened: Atmosphère Custom Firmware
