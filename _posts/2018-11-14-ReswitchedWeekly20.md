@@ -6,9 +6,7 @@ category: reswitchedweekly
 
 Hello and welcome to Reswitched Weekly, a bi-weekly summary of the progress
 made by the reswitched team and wider community around homebrew development for
-the Nintendo Switch.
-
-<!-- Something about radio silence here? -->
+the Nintendo Switch. Brought to you by Gerd again, because of @roblablas incredible procrastination skills. The next issue will be on time, maybe...
 
 ## What Happened: Some general tools
 
@@ -22,7 +20,7 @@ the Nintendo Switch.
 ## What Happened: Libnx Toolchain
 
 - @yellows8 added support for the video recording applet
-- Actually, @yellows8, @fincs and many other contributors have worked hard on improving libnx. See the full commit log [here](https://github.com/switchbrew/libnx/commits/master).
+- Actually, @yellows8, @fincs, and many other contributors have worked hard on improving libnx. See the full commit log [here](https://github.com/switchbrew/libnx/commits/master).
 
 ## What Happened: Rust Toolchains
 
