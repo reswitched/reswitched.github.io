@@ -72,6 +72,7 @@ Channels that no longer serve a purpose. Read-only.
 ## Rules
 
 Our Discord maintains a set of rules and guidelines that users are expected to follow. Not following these rules may result in moderator action.
+These rules are enforced in spirit, not in letter. Trying to bend these rules will be treated as breaking them.
 
 1. Read all the rules before participating in chat. Not reading the rules is not an excuse for breaking them.
    - It's suggested that you read channel topics and pins before asking questions as well, as some questions may have already been answered in those.
