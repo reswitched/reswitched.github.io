@@ -11,7 +11,6 @@ ReSwitched maintains a public Discord server with numerous channels for news, in
 1. **participant**: Given to members who pass the #newcomers probation; has read-write access to channels under the General category and read access to channels under the Community and Hacking/Development categories.
 1. **community**: Given to users who continuously contribute positively to the community and the quality of discussion. All the privileges of **participant** plus write access to channels under the Community category.
 1. **hacker**: Given to members with significant technical ability; all the privileges of **community** plus write access to the channels under the Hacking/Development category. Note that this role is only given when requested by a user; not every user without this role is without technical ability!
-1. **hop**: A "half-operator" (a term coined by some older IRC servers); a role given to members who assist with moderating the server.
 1. **mod**: A role given to members responsible for moderating the server. Usually not seen in the user list unless manually checked for, as most users with **mod** also have **team**.
 1. **team**: A role verifying a user as a member of the ReSwitched team.
 1. **private**: A role given to a user requiring access to channels containing sensitive information.  
@@ -79,9 +78,9 @@ Our Discord maintains a set of rules and guidelines that users are expected to f
 1. Be nice to each other. It's fine to disagree, it's not fine to insult or attack other people.
    - You may disagree with anyone or anything you like, but you should try to keep it to opinions, and not people. Avoid vitriol.
    - Constant antagonistic behavior is considered uncivil and appropriate action will be taken.
-   - The use of derogatory slurs -- sexist, racist, homophobic, or otherwise -- is unacceptable and may be grounds for an immediate ban.
+   - The use of derogatory slurs -- sexist, racist, homophobic, transphobic, or otherwise -- is unacceptable and may be grounds for an immediate ban.
 
-1. If you have concerns about another user, please take up your concerns with a staff member (someone with the "moderator", "hop", or "Wizard" role in the sidebar) in private. Don't publicly call other users out.
+1. If you have concerns about another user, please take up your concerns with a staff member (someone with the "mod" role in the sidebar) in private. Don't publicly call other users out.
 
 1. From time to time, we may mention everyone in the server. We do this when we feel something important is going on that requires attention. Complaining about these pings may result in a ban.
    - To disable notifications for these pings, suppress them in "ReSwitched → Notification Settings".
