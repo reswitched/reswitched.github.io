@@ -96,4 +96,6 @@ Our Discord maintains a set of rules and guidelines that users are expected to f
 
 1. Absolutely no piracy. There is a zero-tolerance policy and we will enforce this strictly and swiftly.
 
+1. Installable homebrew NSPs are not supported here. If you are confused about how to set up homebrew properly (via hbl.nsp), it is fine to ask for assistance.
+
 1. The first character of your server nickname should be alphanumeric if you wish to talk in chat.
