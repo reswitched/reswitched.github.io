@@ -51,7 +51,7 @@ Channels where active Switch-specific exploitation and development take place. R
 
 1. **#toolchain-development**: A channel for discussion of Switch homebrew toolchain development.
 1. **#cfw-development**: A channel for discussion of custom firmware development, and development of custom firmware bikeshed discussions.
-1. **#commits**: A channel that lists new commits to ReSwitched projects (that have the Discord webhook enabled). Read-only.
+1. **#github**: A channel that lists new commits, issues, PR and comments to ReSwitched projects. Read-only.
 
 ### Meta
 
