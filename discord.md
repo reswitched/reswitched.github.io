@@ -94,7 +94,7 @@ Our Discord maintains a set of rules and guidelines that users are expected to f
 
 1. Trying to evade, look for loopholes, or stay borderline within the rules will be treated as breaking them.
 
-1. Absolutely no piracy. There is a zero-tolerance policy and we will enforce this strictly and swiftly.
+1. Absolutely no piracy. Discussion of "backups" or other pirated materials is not permitted, even if you legally own a copy of the game. This is a zero-tolerance, non-negotiable policy, and will be enforced strictly and swiftly.
 
 1. Installable homebrew NSPs are not supported here. If you are confused about how to set up homebrew properly (via hbl.nsp), it is fine to ask for assistance.
 
