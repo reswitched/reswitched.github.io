@@ -26,6 +26,8 @@ All of our current hax require user interaction; that is, they are not "coldboot
 
 The Switch provides extremely detailed telemetry to Nintendo. In particular, crashes and their requisite error codes are uploaded to Nintendo; lots of homebrew use custom error codes when crashing, and these being uploaded to Nintendo could definitely get you banned. If you are an end user who cares about online access, it is not recommended to run custom firmware at this time. The Switch's telemetry has not been entirely disabled even though the Error Collection sysmodule is not launched on currently available custom firmwares.
 
+Especially don't go online if you have installed custom titles (warez NSPs) to your system menu.
+
 ## Does ReSwitched accept donations?
 
 ReSwitched is **NOT** accepting donations at this time. Anyone claiming otherwise is an impersonator/fraud and should be reported to us on our <a href="{{ site.baseurl }}/discord">Discord</a>.
@@ -37,6 +39,14 @@ This is extremely unlikely due to a very secure cryptographic design for the car
 ## Will <popular exploit in the news, e.g. rowhammer, DirtyCOW, Spectre, Meltdown, etc.> work on the Switch?
 
 While there's no immediate way to guarantee yes or no, if said exploit *does* work on the Switch, it's likely you'll hear about it very quickly, as many groups and individuals are sure to test it on the Switch as soon as they hear about it. Given this, if you haven't heard anything about it working, it's unlikely it does.
+
+## What is the difference between fusée and fusée-gelée?
+
+Fusée-Gelée is the name of an exploit in the bootrom of the Nintendo Switch. The name means "frozen rocket". The exploit is also known as ShofEL2. A detailed write-up is avaialble at <http://misc.ktemkin.com/fusee_gelee_nvidia.pdf>. Fusée is the name of Atmosphére's bootloader.
+
+## What are the different types of NSP files?
+
+There are essentially two ways NSPs are used in the scene. The first being an exploit for the "nspwn" bug. This is a bug in FS which allows you to give an NSP the same contents as an exefs normally would have inside an NCA, but with the NSP alone as it's own file, without the NPDM/binary being verified. This is how hbl was initially implemented. This is different than the current piracy/homebrew-on-home-menu methods, where the NSP is just used as a container for install-time, much like a zip file would normally be used, and they simply contain NCAs to be installed. Atmosphere uses the former type, so no you cannot replace this NSP with a piracy/homebrew-on-home-menu NSP.
 
 ## Questions about Nintendo Switch Internals 
 
@@ -81,3 +91,7 @@ Adapted from the now-defunct #vvv-faq channel on our <a href="{{ site.baseurl }}
 ### Is there a way to bypass the fuses burned on major system firmware updates, allowing downgrading the Switch firmware to more vulnerable versions?
 
 The fuses in the Nintendo Switch are embedded into the SoC, and thus are not feasibly bypassable via any hardware modification. Fuse checks can be bypassed with a bootrom-level exploit like [fusée-gelée](https://github.com/Cease-and-DeSwitch/fusee-launcher)/[shofel2](https://github.com/fail0verflow/shofel2), but downgrading is not particularly useful for the end user at that point since you've already achieved the most privileged level of execution possible. Additionally, if you downgrade through a method like this, you will be reliant on that method to boot until you upgrade again, since normal boot will be interrupted by the failing fuse checks; furthermore, the fuse checks will still occur at warmboot, preventing the device from waking up after sleeping.
+
+### Why are savefile exploits not an option?
+
+The Switch uses ASLR, meaning that processes are loaded with a randomized address space layout. This makes static exploits (not attacking scripting engines) extremely unlikely to ever arise in a reliable form. There is a flaw allowing for partial ASLR defeat on firmware versions before 3.0.2, but it's extremely difficult to use.
